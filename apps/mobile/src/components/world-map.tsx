@@ -1,13 +1,33 @@
 import { Camera, Map } from '@maplibre/maplibre-react-native';
-import { StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
-import { WORLD_MAP_STYLE, WORLD_VIEW } from '@/constants/map';
+import {
+  WORLD_BOUNDS,
+  WORLD_MAX_ZOOM,
+  WORLD_MIN_ZOOM,
+  WORLD_VIEW,
+  createSimpleAtlasStyle,
+} from '@/constants/map';
+
+const atlas = Image.resolveAssetSource(
+  require('../../assets/maps/SimpleAtlasDraft.png'),
+);
+
+if (!atlas?.uri) {
+  throw new Error('Simple atlas image could not be resolved.');
+}
+
+const atlasUri = atlas.uri;
 
 export function WorldMap() {
   return (
     <View style={styles.container}>
-      <Map style={styles.map} mapStyle={WORLD_MAP_STYLE}>
-        <Camera initialViewState={WORLD_VIEW} />
+      <Map style={styles.map} mapStyle={createSimpleAtlasStyle(atlasUri)}>
+        <Camera
+          initialViewState={WORLD_VIEW}
+          minZoom={WORLD_MIN_ZOOM}
+          maxZoom={WORLD_MAX_ZOOM}
+        />
       </Map>
     </View>
   );
