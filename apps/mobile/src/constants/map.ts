@@ -38,10 +38,14 @@ export const WORLD_BOUNDS = [
   MERCATOR_LATITUDE_LIMIT,
 ] as [number, number, number, number];
 
+/** Font stacks must match a face served by `glyphs` in the map style. */
+export const MAP_LABEL_FONTS = ['Open Sans Regular', 'Arial Unicode MS Regular'];
+
 /** Local phone-map style. One image covers the Web Mercator world. */
 export function createSimpleAtlasStyle(imageUrl: string): StyleSpecification {
   return {
     version: 8,
+    glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
     sources: {
       'simple-atlas': {
         type: 'image',

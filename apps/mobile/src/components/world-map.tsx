@@ -1,6 +1,8 @@
 import { Camera, Map } from '@maplibre/maplibre-react-native';
 import { Image, StyleSheet, View } from 'react-native';
 
+import { PhysicalLabels } from '@/components/map/layers/physical-labels';
+
 import {
   WORLD_BOUNDS,
   WORLD_MAX_ZOOM,
@@ -28,6 +30,12 @@ export function WorldMap() {
           minZoom={WORLD_MIN_ZOOM}
           maxZoom={WORLD_MAX_ZOOM}
         />
+
+        <PhysicalLabels 
+          showPoints={true}
+          showRegions={true}
+        />
+
       </Map>
     </View>
   );
