@@ -1,40 +1,43 @@
 import { GeoJSONSource, Layer } from '@maplibre/maplibre-react-native';
+
 import type { FeatureCollection } from 'geojson';
 
+import { useMemo } from 'react';
+
 import { MAP_LABEL_FONTS } from '@/constants/map';
+
+import {
+  generateVisibleRegionLabels,
+  type MapBounds,
+  type RegionLabelData,
+} from '@/utils/map/region-label-placement';
+
+// --------------------------------------------------
+// Data
+// --------------------------------------------------
 
 const geographyPoints =
   require('@/assets/GeoJSON/Physical/50m-physical-points_labels.json') as FeatureCollection;
 
-const geographyRegions =
-  require('@/assets/GeoJSON/Physical/50m-physical-regions_labels.json') as FeatureCollection;
+const regionCandidates =
+  require('@/assets/GeoJSON/Physical/region-label-candidates.json') as RegionLabelData[];
 
-const POINT_LABEL_TEXT = ['get', 'name'];
-
-const REGION_LABEL_TEXT = ['get', 'NAME'];
-
-function labelFromProperties(
-  properties: GeoJSON.GeoJsonProperties | null | undefined,
-  kind: 'point' | 'region',
-): string | undefined {
-  if (!properties) {
-    return undefined;
-  }
-
-  if (kind === 'point') {
-    const label = properties.label ?? properties.name;
-    return typeof label === 'string' && label.length > 0 ? label : undefined;
-  }
-
-  const label = properties.LABEL ?? properties.NAME;
-  return typeof label === 'string' && label.length > 0 ? label : undefined;
-}
+// --------------------------------------------------
+// Props
+// --------------------------------------------------
 
 type PhysicalLabelsProps = {
   showPoints?: boolean;
   showRegions?: boolean;
+
+  visibleBounds: MapBounds | null;
+
   onLabelPress?: (name: string) => void;
 };
+
+// --------------------------------------------------
+// Styles
+// --------------------------------------------------
 
 const POINT_LABEL_STYLE = {
   fontSize: 12,
@@ -50,22 +53,50 @@ const REGION_LABEL_STYLE = {
   haloWidth: 1.5,
 };
 
+// --------------------------------------------------
+// Component
+// --------------------------------------------------
+
 export function PhysicalLabels({
   showPoints = true,
   showRegions = true,
+  visibleBounds,
   onLabelPress,
 }: PhysicalLabelsProps) {
+
+  // Recalculate only when the viewport changes.
+  const visibleRegionLabels = useMemo(() => {
+    if (!visibleBounds || !showRegions) {
+      return {
+        type: 'FeatureCollection',
+        features: [],
+      } as FeatureCollection;
+    }
+
+    return generateVisibleRegionLabels(
+      regionCandidates,
+      visibleBounds
+    );
+
+  }, [visibleBounds, showRegions]);
+
   return (
     <>
+      {/* ========================================
+          PHYSICAL POINT LABELS
+      ======================================== */}
+
       {showPoints && (
         <GeoJSONSource
           id="physical-points-source"
           data={geographyPoints}
           onPress={(event) => {
-            const feature = event.nativeEvent.features?.[0];
-            const name = labelFromProperties(feature?.properties, 'point');
+            const feature =
+              event.nativeEvent.features?.[0];
 
-            if (name) {
+            const name = feature?.properties?.name;
+
+            if (typeof name === 'string') {
               event.stopPropagation();
               onLabelPress?.(name);
             }
@@ -94,15 +125,22 @@ export function PhysicalLabels({
         </GeoJSONSource>
       )}
 
+      {/* ========================================
+          PHYSICAL REGION LABELS
+      ======================================== */}
+
       {showRegions && (
         <GeoJSONSource
-          id="physical-regions-source"
-          data={geographyRegions}
+          id="physical-region-labels-source"
+          data={visibleRegionLabels}
           onPress={(event) => {
-            const feature = event.nativeEvent.features?.[0];
-            const name = labelFromProperties(feature?.properties, 'region');
+            const feature =
+              event.nativeEvent.features?.[0];
 
-            if (name) {
+            const name =
+              feature?.properties?.displayName;
+
+            if (typeof name === 'string') {
               event.stopPropagation();
               onLabelPress?.(name);
             }
@@ -111,28 +149,40 @@ export function PhysicalLabels({
           <Layer
             id="physical-region-labels"
             type="symbol"
-            source="physical-regions-source"
             afterId="simple-atlas"
-            minzoom={0}
-            filter={[
-                '==',
-                ['get', 'NAME'],
-                'COAST MOUNTAINS',
-            ]}
+            minzoom={2}
             layout={{
-                'text-field': 'COAST MOUNTAINS',
-                'text-font': MAP_LABEL_FONTS,
-                'text-size': 20,
-                'text-anchor': 'center',
-                'text-allow-overlap': true,
-                'text-ignore-placement': true,
+              'symbol-placement': 'point',
+
+              'text-field': [
+                'get',
+                'displayName',
+              ],
+
+              'text-font': MAP_LABEL_FONTS,
+
+              'text-size':
+                REGION_LABEL_STYLE.fontSize,
+
+              'text-anchor': 'center',
+
+              'text-allow-overlap': false,
+
+              'text-ignore-placement': false,
+
+              'text-padding': 8,
             }}
             paint={{
-                'text-color': '#FF0000',
-                'text-halo-color': '#FFFFFF',
-                'text-halo-width': 2,
+              'text-color':
+                REGION_LABEL_STYLE.color,
+
+              'text-halo-color':
+                REGION_LABEL_STYLE.haloColor,
+
+              'text-halo-width':
+                REGION_LABEL_STYLE.haloWidth,
             }}
-            />
+          />
         </GeoJSONSource>
       )}
     </>

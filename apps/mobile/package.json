@@ -32,6 +32,8 @@
     "react-native-worklets": "0.13.0"
   },
   "devDependencies": {
+    "@turf/area": "^7.4.0",
+    "@turf/point-on-feature": "^7.4.0",
     "@types/react": "~19.3.0",
     "typescript": "~6.0.3"
   },
