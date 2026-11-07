@@ -1,11 +1,27 @@
-import { useMemo, useRef } from 'react';
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { useEffect, useMemo, useRef } from 'react';
+
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+} from 'react-native';
 
 import BottomSheet, {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
 
-export function MapBottomPanel() {
+import type { MapSelection } from '@/types/map-selection';
+
+type MapBottomPanelProps = {
+  selection: MapSelection | null;
+  onClearSelection: () => void;
+};
+
+export function MapBottomPanel({
+  selection,
+  onClearSelection,
+}: MapBottomPanelProps) {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   const snapPoints = useMemo(
@@ -13,9 +29,24 @@ export function MapBottomPanel() {
     []
   );
 
+  // Expand the bottom sheet when a feature is selected.
+  useEffect(() => {
+    if (selection) {
+      bottomSheetRef.current?.snapToIndex(1);
+    }
+  }, [selection]);
+
   const handleExpand = () => {
     bottomSheetRef.current?.snapToIndex(1);
   };
+
+  const handleBack = () => {
+    onClearSelection();
+
+    bottomSheetRef.current?.snapToIndex(0);
+  };
+
+  const isRegion = selection?.type === 'region';
 
   return (
     <BottomSheet
@@ -29,22 +60,58 @@ export function MapBottomPanel() {
     >
       <BottomSheetView style={styles.content}>
 
-        <Text style={styles.title}>
-          Explore the World
-        </Text>
+        {selection ? (
+          <>
+            {/* Selected geographical feature */}
 
-        <Text style={styles.description}>
-          Discover places, collect stamps, and share your memories.
-        </Text>
+            <Text style={styles.category}>
+              {isRegion
+                ? 'GEOGRAPHICAL REGION'
+                : 'GEOGRAPHICAL FEATURE'}
+            </Text>
 
-        <Pressable
-          style={styles.button}
-          onPress={handleExpand}
-        >
-          <Text style={styles.buttonText}>
-            Explore Places
-          </Text>
-        </Pressable>
+            <Text style={styles.title}>
+              {selection.name}
+            </Text>
+
+            <Text style={styles.description}>
+              {isRegion
+                ? 'Explore this geographical region.'
+                : 'Explore this geographical feature.'}
+            </Text>
+
+            <Pressable
+              style={styles.button}
+              onPress={handleBack}
+            >
+              <Text style={styles.buttonText}>
+                Back to Explore
+              </Text>
+            </Pressable>
+          </>
+        ) : (
+          <>
+            {/* Default panel */}
+
+            <Text style={styles.title}>
+              Explore the World
+            </Text>
+
+            <Text style={styles.description}>
+              Discover places, collect stamps,
+              and share your memories.
+            </Text>
+
+            <Pressable
+              style={styles.button}
+              onPress={handleExpand}
+            >
+              <Text style={styles.buttonText}>
+                Explore Places
+              </Text>
+            </Pressable>
+          </>
+        )}
 
       </BottomSheetView>
     </BottomSheet>
@@ -68,6 +135,14 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingTop: 10,
+  },
+
+  category: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#537A5A',
+    letterSpacing: 1.5,
+    marginBottom: 8,
   },
 
   title: {

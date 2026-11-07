@@ -6,6 +6,8 @@ import { useMemo } from 'react';
 
 import { MAP_LABEL_FONTS } from '@/constants/map';
 
+import type { MapSelection } from '@/types/map-selection';
+
 import {
   generateVisibleRegionLabels,
   type MapBounds,
@@ -29,10 +31,8 @@ const regionCandidates =
 type PhysicalLabelsProps = {
   showPoints?: boolean;
   showRegions?: boolean;
-
   visibleBounds: MapBounds | null;
-
-  onLabelPress?: (name: string) => void;
+  onLabelPress?: (selection: MapSelection) => void;
 };
 
 // --------------------------------------------------
@@ -91,15 +91,20 @@ export function PhysicalLabels({
           id="physical-points-source"
           data={geographyPoints}
           onPress={(event) => {
-            const feature =
-              event.nativeEvent.features?.[0];
+            const feature = event.nativeEvent.features?.[0];
 
             const name = feature?.properties?.name;
 
-            if (typeof name === 'string') {
-              event.stopPropagation();
-              onLabelPress?.(name);
+            if (typeof name !== 'string' || !name.trim()) {
+              return;
             }
+
+            event.stopPropagation();
+
+            onLabelPress?.({
+              type: 'point',
+              name,
+            });
           }}
         >
           <Layer
@@ -134,16 +139,25 @@ export function PhysicalLabels({
           id="physical-region-labels-source"
           data={visibleRegionLabels}
           onPress={(event) => {
-            const feature =
-              event.nativeEvent.features?.[0];
+            const feature = event.nativeEvent.features?.[0];
 
-            const name =
-              feature?.properties?.displayName;
+            const name = feature?.properties?.displayName;
+            const id = feature?.properties?.id ?? feature?.id;
 
-            if (typeof name === 'string') {
-              event.stopPropagation();
-              onLabelPress?.(name);
+            if (
+              typeof name !== 'string' ||
+              (typeof id !== 'number' && typeof id !== 'string')
+            ) {
+              return;
             }
+
+            event.stopPropagation();
+
+            onLabelPress?.({
+              type: 'region',
+              name,
+              id,
+            });
           }}
         >
           <Layer

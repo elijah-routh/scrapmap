@@ -1,3 +1,5 @@
+import { useState, useRef } from 'react';
+
 import {
   Camera,
   Map,
@@ -9,12 +11,12 @@ import {
   View,
 } from 'react-native';
 
-import {
-  useState,
-  useRef,
-} from 'react';
-
 import { PhysicalLabels } from '@/components/map/layers/physical-labels';
+
+import { SelectedRegionOutline } from
+  '@/components/map/layers/selected-region-outline';
+
+import type { MapSelection } from '@/types/map-selection';
 
 import {
   WORLD_MAX_ZOOM,
@@ -27,6 +29,15 @@ import {
   mapBoundsChanged,
   type MapBounds,
 } from '@/utils/map/region-label-placement';
+
+// --------------------------------------------------
+// Props
+// --------------------------------------------------
+
+type WorldMapProps = {
+  selection: MapSelection | null;
+  onSelectFeature: (selection: MapSelection) => void;
+};
 
 // --------------------------------------------------
 // Atlas image
@@ -48,7 +59,10 @@ const atlasUri = atlas.uri;
 // Component
 // --------------------------------------------------
 
-export function WorldMap() {
+export function WorldMap({
+  selection,
+  onSelectFeature,
+}: WorldMapProps) {
   const [visibleBounds, setVisibleBounds] =
     useState<MapBounds | null>(null);
 
@@ -94,16 +108,17 @@ export function WorldMap() {
           maxZoom={WORLD_MAX_ZOOM}
         />
 
+        {/* Highlight selected geographical region */}
+        <SelectedRegionOutline
+          selection={selection}
+        />
+
+        {/* Interactive geographical labels */}
         <PhysicalLabels
           showPoints={true}
           showRegions={true}
           visibleBounds={visibleBounds}
-          onLabelPress={(name) => {
-            console.log(
-              'Selected physical feature:',
-              name
-            );
-          }}
+          onLabelPress={onSelectFeature}
         />
       </Map>
     </View>
