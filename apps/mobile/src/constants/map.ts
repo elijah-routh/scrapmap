@@ -27,8 +27,17 @@ export const WORLD_VIEW = {
 
 export const WORLD_MIN_ZOOM = 0;
 
-/** Stand-in ceiling until regional and detailed atlas images exist. */
-export const WORLD_MAX_ZOOM = 5;
+/** World overview image: visible while zoom < SIMPLE_ATLAS_MAX_ZOOM. */
+export const SIMPLE_ATLAS_MAX_ZOOM = 3;
+
+/** Zoomed artwork: visible from this level up (replaced by raster tiles later). */
+export const DETAILED_ATLAS_MIN_ZOOM = 3;
+
+/** Allow extra pinch on the detailed image until tile pyramid exists. */
+export const WORLD_MAX_ZOOM = 6;
+
+/** Top basemap raster layer id — overlays should use `afterId` with this. */
+export const BASEMAP_TOP_LAYER_ID = 'detailed-atlas';
 
 /** West, south, east, north. Keeps the camera center on the atlas. */
 export const WORLD_BOUNDS = [
@@ -41,15 +50,28 @@ export const WORLD_BOUNDS = [
 /** Font stacks must match a face served by `glyphs` in the map style. */
 export const MAP_LABEL_FONTS = ['Open Sans Regular', 'Arial Unicode MS Regular'];
 
-/** Local phone-map style. One image covers the Web Mercator world. */
-export function createSimpleAtlasStyle(imageUrl: string): StyleSpecification {
+export type AtlasStyleUrls = {
+  simpleUrl: string;
+  detailedUrl: string;
+};
+
+/** Local phone-map style with overview + zoomed image sources (tile-ready breakpoints). */
+export function createAtlasStyle({
+  simpleUrl,
+  detailedUrl,
+}: AtlasStyleUrls): StyleSpecification {
   return {
     version: 8,
     glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
     sources: {
       'simple-atlas': {
         type: 'image',
-        url: imageUrl,
+        url: simpleUrl,
+        coordinates: WORLD_IMAGE_COORDINATES,
+      },
+      'detailed-atlas': {
+        type: 'image',
+        url: detailedUrl,
         coordinates: WORLD_IMAGE_COORDINATES,
       },
     },
@@ -66,6 +88,13 @@ export function createSimpleAtlasStyle(imageUrl: string): StyleSpecification {
         type: 'raster',
         source: 'simple-atlas',
         minzoom: 0,
+        maxzoom: SIMPLE_ATLAS_MAX_ZOOM,
+      },
+      {
+        id: BASEMAP_TOP_LAYER_ID,
+        type: 'raster',
+        source: 'detailed-atlas',
+        minzoom: DETAILED_ATLAS_MIN_ZOOM,
       },
     ],
   };

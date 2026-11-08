@@ -12,6 +12,7 @@ import type {
   MultiPolygon,
 } from 'geojson';
 
+import { BASEMAP_TOP_LAYER_ID } from '@/constants/map';
 import type { MapSelection } from '@/types/map-selection';
 
 const geographyRegions =
@@ -87,7 +88,7 @@ export function SelectedRegionOutline({
       <Layer
         id="selected-region-fill"
         type="fill"
-        afterId="simple-atlas"
+        afterId={BASEMAP_TOP_LAYER_ID}
         paint={{
           'fill-color': '#F4C76A',
           'fill-opacity': 0.18,

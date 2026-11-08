@@ -22,7 +22,7 @@ import {
   WORLD_MAX_ZOOM,
   WORLD_MIN_ZOOM,
   WORLD_VIEW,
-  createSimpleAtlasStyle,
+  createAtlasStyle,
 } from '@/constants/map';
 
 import {
@@ -43,17 +43,26 @@ type WorldMapProps = {
 // Atlas image
 // --------------------------------------------------
 
-const atlas = Image.resolveAssetSource(
-  require('../../assets/maps/SimpleAtlasDraft.png')
+const simpleAtlas = Image.resolveAssetSource(
+  require('../../assets/maps/SimpleAtlasDraft.png'),
 );
 
-if (!atlas?.uri) {
-  throw new Error(
-    'Simple atlas image could not be resolved.'
-  );
+const detailedAtlas = Image.resolveAssetSource(
+  require('../../assets/maps/AtlasZoomedDraft.png'),
+);
+
+if (!simpleAtlas?.uri) {
+  throw new Error('Simple atlas image could not be resolved.');
 }
 
-const atlasUri = atlas.uri;
+if (!detailedAtlas?.uri) {
+  throw new Error('Detailed atlas image could not be resolved.');
+}
+
+const mapStyle = createAtlasStyle({
+  simpleUrl: simpleAtlas.uri,
+  detailedUrl: detailedAtlas.uri,
+});
 
 // --------------------------------------------------
 // Component
@@ -86,7 +95,7 @@ export function WorldMap({
       <Map
         ref={mapRef}
         style={styles.map}
-        mapStyle={createSimpleAtlasStyle(atlasUri)}
+        mapStyle={mapStyle}
 
         onDidFinishLoadingMap={async () => {
           const bounds = await mapRef.current?.getBounds();

@@ -4,7 +4,7 @@ import type { FeatureCollection } from 'geojson';
 
 import { useMemo } from 'react';
 
-import { MAP_LABEL_FONTS } from '@/constants/map';
+import { BASEMAP_TOP_LAYER_ID, MAP_LABEL_FONTS } from '@/constants/map';
 
 import type { MapSelection } from '@/types/map-selection';
 
@@ -110,7 +110,7 @@ export function PhysicalLabels({
           <Layer
             id="physical-point-labels"
             type="symbol"
-            afterId="simple-atlas"
+            afterId={BASEMAP_TOP_LAYER_ID}
             minzoom={2}
             filter={['has', 'name']}
             layout={{
@@ -163,7 +163,7 @@ export function PhysicalLabels({
           <Layer
             id="physical-region-labels"
             type="symbol"
-            afterId="simple-atlas"
+            afterId={BASEMAP_TOP_LAYER_ID}
             minzoom={2}
             layout={{
               'symbol-placement': 'point',
