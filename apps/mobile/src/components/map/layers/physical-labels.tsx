@@ -1,12 +1,20 @@
-import { GeoJSONSource, Layer } from '@maplibre/maplibre-react-native';
+import { GeoJSONSource } from '@maplibre/maplibre-react-native';
 
 import type { FeatureCollection } from 'geojson';
 
 import { useMemo } from 'react';
 
-import { BASEMAP_TOP_LAYER_ID, MAP_LABEL_FONTS } from '@/constants/map';
+import { SymbolLabelPair } from '@/components/map/layers/symbol-label-pair';
+import { LABEL_TEXT_SIZE } from '@/constants/map-label-tiers';
 
 import type { MapSelection } from '@/types/map-selection';
+
+import {
+  PHYSICAL_POINT_SORT_KEY,
+  PHYSICAL_POINT_VISIBILITY,
+  REGION_SORT_KEY,
+  regionLabelVisibility,
+} from '@/utils/map/label-expressions';
 
 import {
   generateVisibleRegionLabels,
@@ -14,19 +22,23 @@ import {
   type RegionLabelData,
 } from '@/utils/map/region-label-placement';
 
-// --------------------------------------------------
-// Data
-// --------------------------------------------------
-
 const geographyPoints =
   require('@/assets/GeoJSON/Physical/50m-physical-points_labels.json') as FeatureCollection;
 
 const regionCandidates =
   require('@/assets/GeoJSON/Physical/region-label-candidates.json') as RegionLabelData[];
 
-// --------------------------------------------------
-// Props
-// --------------------------------------------------
+const POINT_STYLE = {
+  color: '#5C4630',
+  haloColor: '#F5E9D5',
+  haloWidth: 1,
+};
+
+const REGION_STYLE = {
+  color: '#806A50',
+  haloColor: '#F5E9D5',
+  haloWidth: 1.5,
+};
 
 type PhysicalLabelsProps = {
   showPoints?: boolean;
@@ -35,36 +47,12 @@ type PhysicalLabelsProps = {
   onLabelPress?: (selection: MapSelection) => void;
 };
 
-// --------------------------------------------------
-// Styles
-// --------------------------------------------------
-
-const POINT_LABEL_STYLE = {
-  fontSize: 12,
-  color: '#5C4630',
-  haloColor: '#F5E9D5',
-  haloWidth: 1,
-};
-
-const REGION_LABEL_STYLE = {
-  fontSize: 15,
-  color: '#806A50',
-  haloColor: '#F5E9D5',
-  haloWidth: 1.5,
-};
-
-// --------------------------------------------------
-// Component
-// --------------------------------------------------
-
 export function PhysicalLabels({
   showPoints = true,
   showRegions = true,
   visibleBounds,
   onLabelPress,
 }: PhysicalLabelsProps) {
-
-  // Recalculate only when the viewport changes.
   const visibleRegionLabels = useMemo(() => {
     if (!visibleBounds || !showRegions) {
       return {
@@ -73,74 +61,19 @@ export function PhysicalLabels({
       } as FeatureCollection;
     }
 
-    return generateVisibleRegionLabels(
-      regionCandidates,
-      visibleBounds
-    );
-
+    return generateVisibleRegionLabels(regionCandidates, visibleBounds);
   }, [visibleBounds, showRegions]);
+
+  const regionVisibility = regionLabelVisibility();
 
   return (
     <>
-      {/* ========================================
-          PHYSICAL POINT LABELS
-      ======================================== */}
-
-      {showPoints && (
-        <GeoJSONSource
-          id="physical-points-source"
-          data={geographyPoints}
-          onPress={(event) => {
-            const feature = event.nativeEvent.features?.[0];
-
-            const name = feature?.properties?.name;
-
-            if (typeof name !== 'string' || !name.trim()) {
-              return;
-            }
-
-            event.stopPropagation();
-
-            onLabelPress?.({
-              type: 'point',
-              name,
-            });
-          }}
-        >
-          <Layer
-            id="physical-point-labels"
-            type="symbol"
-            afterId={BASEMAP_TOP_LAYER_ID}
-            minzoom={2}
-            filter={['has', 'name']}
-            layout={{
-              'text-field': ['get', 'name'],
-              'text-font': MAP_LABEL_FONTS,
-              'text-size': POINT_LABEL_STYLE.fontSize,
-              'text-anchor': 'center',
-              'text-allow-overlap': false,
-              'text-padding': 4,
-            }}
-            paint={{
-              'text-color': POINT_LABEL_STYLE.color,
-              'text-halo-color': POINT_LABEL_STYLE.haloColor,
-              'text-halo-width': POINT_LABEL_STYLE.haloWidth,
-            }}
-          />
-        </GeoJSONSource>
-      )}
-
-      {/* ========================================
-          PHYSICAL REGION LABELS
-      ======================================== */}
-
       {showRegions && (
         <GeoJSONSource
           id="physical-region-labels-source"
           data={visibleRegionLabels}
           onPress={(event) => {
             const feature = event.nativeEvent.features?.[0];
-
             const name = feature?.properties?.displayName;
             const id = feature?.properties?.id ?? feature?.id;
 
@@ -160,42 +93,49 @@ export function PhysicalLabels({
             });
           }}
         >
-          <Layer
-            id="physical-region-labels"
-            type="symbol"
-            afterId={BASEMAP_TOP_LAYER_ID}
-            minzoom={2}
-            layout={{
-              'symbol-placement': 'point',
+          <SymbolLabelPair
+            idPrefix="physical-region-labels"
+            textField={['get', 'displayName']}
+            textSize={LABEL_TEXT_SIZE.region}
+            sortKey={REGION_SORT_KEY}
+            filter={regionVisibility}
+            textColor={REGION_STYLE.color}
+            haloColor={REGION_STYLE.haloColor}
+            haloWidth={REGION_STYLE.haloWidth}
+            textPadding={8}
+          />
+        </GeoJSONSource>
+      )}
 
-              'text-field': [
-                'get',
-                'displayName',
-              ],
+      {showPoints && (
+        <GeoJSONSource
+          id="physical-points-source"
+          data={geographyPoints}
+          onPress={(event) => {
+            const feature = event.nativeEvent.features?.[0];
+            const name = feature?.properties?.name;
 
-              'text-font': MAP_LABEL_FONTS,
+            if (typeof name !== 'string' || !name.trim()) {
+              return;
+            }
 
-              'text-size':
-                REGION_LABEL_STYLE.fontSize,
+            event.stopPropagation();
 
-              'text-anchor': 'center',
-
-              'text-allow-overlap': false,
-
-              'text-ignore-placement': false,
-
-              'text-padding': 8,
-            }}
-            paint={{
-              'text-color':
-                REGION_LABEL_STYLE.color,
-
-              'text-halo-color':
-                REGION_LABEL_STYLE.haloColor,
-
-              'text-halo-width':
-                REGION_LABEL_STYLE.haloWidth,
-            }}
+            onLabelPress?.({
+              type: 'point',
+              name,
+            });
+          }}
+        >
+          <SymbolLabelPair
+            idPrefix="physical-point-labels"
+            textField={['get', 'name']}
+            textSize={LABEL_TEXT_SIZE.point}
+            sortKey={PHYSICAL_POINT_SORT_KEY}
+            filter={PHYSICAL_POINT_VISIBILITY}
+            textColor={POINT_STYLE.color}
+            haloColor={POINT_STYLE.haloColor}
+            haloWidth={POINT_STYLE.haloWidth}
           />
         </GeoJSONSource>
       )}

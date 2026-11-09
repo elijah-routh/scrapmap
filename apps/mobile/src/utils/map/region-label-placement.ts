@@ -4,6 +4,11 @@ import type {
   Point,
 } from 'geojson';
 
+import {
+  classifyRegionLabelKind,
+  regionZoomRangeForKind,
+} from '@/constants/map-label-tiers';
+
 // [west, south, east, north]
 export type MapBounds = [
   number,
@@ -140,6 +145,14 @@ export function generateVisibleRegionLabels(
       continue;
     }
 
+    const labelKind = classifyRegionLabelKind(
+      region.featureClass,
+      region.scalerank
+    );
+
+    const { min: labelMinZoom, max: labelMaxZoom } =
+      regionZoomRangeForKind(labelKind);
+
     features.push({
       type: 'Feature',
 
@@ -150,6 +163,9 @@ export function generateVisibleRegionLabels(
         displayName: region.name,
         featureClass: region.featureClass,
         scalerank: region.scalerank,
+        labelKind,
+        labelMinZoom,
+        labelMaxZoom,
       },
 
       geometry: {

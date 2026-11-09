@@ -1,16 +1,21 @@
-import { GeoJSONSource, Layer } from '@maplibre/maplibre-react-native';
+import { GeoJSONSource } from '@maplibre/maplibre-react-native';
 
 import type { FeatureCollection } from 'geojson';
 
-import { BASEMAP_TOP_LAYER_ID, MAP_LABEL_FONTS } from '@/constants/map';
+import { SymbolLabelPair } from '@/components/map/layers/symbol-label-pair';
+import { LABEL_TEXT_SIZE } from '@/constants/map-label-tiers';
 
 import type { MapSelection } from '@/types/map-selection';
+
+import {
+  WONDER_LABEL_VISIBILITY,
+  WONDER_SORT_KEY,
+} from '@/utils/map/label-expressions';
 
 const wonderPoints =
   require('@/assets/GeoJSON/Wonders/map_wonders_336.json') as FeatureCollection;
 
-const WONDER_LABEL_STYLE = {
-  fontSize: 12,
+const WONDER_STYLE = {
   color: '#3D5C44',
   haloColor: '#F5E9D5',
   haloWidth: 1,
@@ -49,31 +54,15 @@ export function WonderLabels({
         });
       }}
     >
-      <Layer
-        id="wonder-point-labels"
-        type="symbol"
-        afterId={BASEMAP_TOP_LAYER_ID}
-        minzoom={2}
-        filter={['has', 'name']}
-        layout={{
-          'text-field': ['get', 'name'],
-          'text-font': MAP_LABEL_FONTS,
-          'text-size': WONDER_LABEL_STYLE.fontSize,
-          'text-anchor': 'center',
-          'text-allow-overlap': false,
-          'text-padding': 4,
-        }}
-        paint={{
-          'text-color': WONDER_LABEL_STYLE.color,
-          'text-halo-color': WONDER_LABEL_STYLE.haloColor,
-          'text-halo-width': WONDER_LABEL_STYLE.haloWidth,
-          'text-opacity': [
-            'case',
-            ['>=', ['zoom'], ['coalesce', ['get', 'minZoom'], 2]],
-            1,
-            0,
-          ],
-        }}
+      <SymbolLabelPair
+        idPrefix="wonder-point-labels"
+        textField={['get', 'name']}
+        textSize={LABEL_TEXT_SIZE.wonder}
+        sortKey={WONDER_SORT_KEY}
+        filter={WONDER_LABEL_VISIBILITY}
+        textColor={WONDER_STYLE.color}
+        haloColor={WONDER_STYLE.haloColor}
+        haloWidth={WONDER_STYLE.haloWidth}
       />
     </GeoJSONSource>
   );
