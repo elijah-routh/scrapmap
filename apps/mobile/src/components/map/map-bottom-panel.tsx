@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef } from 'react';
 
+import { Image } from 'expo-image';
+
 import {
-  View,
   Text,
   StyleSheet,
   Pressable,
@@ -10,6 +11,11 @@ import {
 import BottomSheet, {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
+
+import {
+  wonderDescription,
+  wonderPhotoSource,
+} from '@/data/wonder-content';
 
 import type { MapSelection } from '@/types/map-selection';
 
@@ -47,6 +53,17 @@ export function MapBottomPanel({
   };
 
   const isRegion = selection?.type === 'region';
+  const isWonder = selection?.type === 'wonder';
+
+  const wonderBody =
+    isWonder && selection
+      ? wonderDescription(selection.id)
+      : undefined;
+
+  const wonderImage =
+    isWonder && selection
+      ? wonderPhotoSource(selection.id)
+      : null;
 
   return (
     <BottomSheet
@@ -67,17 +84,31 @@ export function MapBottomPanel({
             <Text style={styles.category}>
               {isRegion
                 ? 'GEOGRAPHICAL REGION'
-                : 'GEOGRAPHICAL FEATURE'}
+                : isWonder
+                  ? 'WONDER'
+                  : 'GEOGRAPHICAL FEATURE'}
             </Text>
+
+            {wonderImage ? (
+              <Image
+                source={wonderImage}
+                style={styles.heroImage}
+                contentFit="cover"
+                accessibilityLabel={selection.name}
+              />
+            ) : null}
 
             <Text style={styles.title}>
               {selection.name}
             </Text>
 
             <Text style={styles.description}>
-              {isRegion
-                ? 'Explore this geographical region.'
-                : 'Explore this geographical feature.'}
+              {isWonder
+                ? wonderBody ??
+                  'Add a description for this wonder in assets/content/wonder-content.json.'
+                : isRegion
+                  ? 'Explore this geographical region.'
+                  : 'Explore this geographical feature.'}
             </Text>
 
             <Pressable
@@ -143,6 +174,15 @@ const styles = StyleSheet.create({
     color: '#537A5A',
     letterSpacing: 1.5,
     marginBottom: 8,
+  },
+
+  heroImage: {
+    width: '100%',
+    height: 160,
+    borderRadius: 12,
+    marginBottom: 12,
+    marginTop: 4,
+    backgroundColor: '#E8E4DC',
   },
 
   title: {

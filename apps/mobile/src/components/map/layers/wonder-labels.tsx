@@ -41,15 +41,22 @@ export function WonderLabels({
       onPress={(event) => {
         const feature = event.nativeEvent.features?.[0];
         const name = feature?.properties?.name;
+        const id = feature?.properties?.id ?? feature?.id;
 
-        if (typeof name !== 'string' || !name.trim()) {
+        if (
+          typeof name !== 'string' ||
+          !name.trim() ||
+          typeof id !== 'string' ||
+          !id.trim()
+        ) {
           return;
         }
 
         event.stopPropagation();
 
         onLabelPress?.({
-          type: 'point',
+          type: 'wonder',
+          id,
           name,
         });
       }}

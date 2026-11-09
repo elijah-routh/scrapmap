@@ -1,5 +1,10 @@
 export type MapSelection =
   | {
+      type: 'wonder';
+      id: string;
+      name: string;
+    }
+  | {
       type: 'point';
       name: string;
     }

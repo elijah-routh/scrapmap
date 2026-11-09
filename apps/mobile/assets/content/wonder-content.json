@@ -1,0 +1,1682 @@
+{
+  "W001": {
+    "name": "Niagara Falls",
+    "description": "A powerful trio of waterfalls on the U.S.–Canada border, famous for their immense flow and mist.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Niagara_falls.jpg"
+  },
+  "W002": {
+    "name": "Denali",
+    "description": "North America's highest mountain, rising above Alaska's rugged wilderness and vast glaciers.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Denali_on_a_clear_and_sunny_day_as_seen_from_the_Eielson_Visitor_Center_on_Thursday%2C_June_1%2C_2017._(14a30d3c-ca1e-4b2f-b644-a863b772305e).JPG"
+  },
+  "W003": {
+    "name": "Ilulissat Icefjord",
+    "description": "A Greenland fjord where enormous icebergs calve from a fast-moving glacier into Disko Bay.",
+    "photo": null
+  },
+  "W004": {
+    "name": "Lake Louise",
+    "description": "A turquoise glacial lake in Canada's Rockies, framed by mountain peaks and a grand historic hotel.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Louise_front_view.jpg"
+  },
+  "W005": {
+    "name": "Bay of Fundy",
+    "description": "A Canadian bay renowned for some of the world's highest tides and dramatic tidal landscapes.",
+    "photo": null
+  },
+  "W006": {
+    "name": "Athabasca Glacier",
+    "description": "An accessible tongue of the Columbia Icefield, flowing between peaks in the Canadian Rockies.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Athabasca_Glacier%2C_Canada_(Unsplash).jpg"
+  },
+  "W007": {
+    "name": "Gros Morne National Park",
+    "description": "A Newfoundland park of fjords, ancient mountains, and exposed rocks revealing Earth's geological history.",
+    "photo": null
+  },
+  "W008": {
+    "name": "Kenai Fjords National Park",
+    "description": "An Alaskan coastal park with tidewater glaciers, steep fjords, seabirds, and marine mammals.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenai_fjords_national_park.jpg"
+  },
+  "W009": {
+    "name": "Kluane National Park",
+    "description": "A vast Yukon wilderness protecting Canada's highest peak, immense icefields, and alpine wildlife.",
+    "photo": null
+  },
+  "W010": {
+    "name": "L'Anse aux Meadows",
+    "description": "The remains of a Norse settlement in Newfoundland, the earliest confirmed European site in North America.",
+    "photo": null
+  },
+  "W011": {
+    "name": "CN Tower",
+    "description": "Toronto's skyline-defining communications tower, featuring panoramic views and a glass-floored lookout.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/CN_Tower_2025.jpg"
+  },
+  "W012": {
+    "name": "Fortress of Louisbourg",
+    "description": "A reconstructed 18th-century French fortified town recalling colonial life on Nova Scotia's coast.",
+    "photo": null
+  },
+  "W013": {
+    "name": "Château Frontenac",
+    "description": "An iconic château-style hotel overlooking Québec City's old town and the St. Lawrence River.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_Frontenac_seen_from_the_ramparts_of_Quebec_City.jpg"
+  },
+  "W014": {
+    "name": "Head-Smashed-In Buffalo Jump",
+    "description": "An Alberta cliff site where Indigenous Plains peoples hunted bison over thousands of years.",
+    "photo": null
+  },
+  "W015": {
+    "name": "SG̱ang Gwaay (Ninstints)",
+    "description": "An ancestral Haida village site in British Columbia, known for its surviving carved memorial poles.",
+    "photo": null
+  },
+  "W016": {
+    "name": "Kennecott Mines",
+    "description": "An abandoned copper-mining complex in Alaska's Wrangell Mountains, with historic red-painted mill buildings.",
+    "photo": null
+  },
+  "W017": {
+    "name": "Dawson Historical Complex",
+    "description": "A preserved Yukon gold-rush townscape reflecting the Klondike's late-19th-century mining boom.",
+    "photo": null
+  },
+  "W018": {
+    "name": "Hvalsey Church Ruins",
+    "description": "The stone ruins of a medieval Norse church in southern Greenland's former Eastern Settlement.",
+    "photo": null
+  },
+  "W019": {
+    "name": "Grand Canyon",
+    "description": "A vast Arizona gorge carved by the Colorado River, exposing layers of ancient rock.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Canyon_USA.jpg"
+  },
+  "W020": {
+    "name": "Yellowstone—Old Faithful",
+    "description": "Yellowstone's famed geyser, celebrated for spectacular, relatively predictable eruptions of boiling water.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_Faithful_Geyser_Yellowstone_National_Park.jpg"
+  },
+  "W021": {
+    "name": "Yosemite Valley",
+    "description": "A glacier-shaped Sierra Nevada valley of sheer granite cliffs, waterfalls, and giant sequoia surroundings.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yosemite_valley.jpg"
+  },
+  "W022": {
+    "name": "Monument Valley",
+    "description": "A striking Navajo Nation landscape of towering sandstone buttes rising from the desert floor.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Monument_Valley.jpg"
+  },
+  "W023": {
+    "name": "Great Smoky Mountains",
+    "description": "A misty Appalachian mountain range famed for rich biodiversity and old forests.",
+    "photo": null
+  },
+  "W024": {
+    "name": "Everglades",
+    "description": "A subtropical Florida wetland of slow-moving water, sawgrass marshes, mangroves, and abundant wildlife.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Everglades_national_park.jpg"
+  },
+  "W025": {
+    "name": "Copper Canyon",
+    "description": "A network of deep canyons in Mexico's Sierra Tarahumara, renowned for dramatic vistas and railway journeys.",
+    "photo": null
+  },
+  "W026": {
+    "name": "Popocatépetl",
+    "description": "An active volcano near Mexico City, recognized by its steep summit and frequent plumes.",
+    "photo": null
+  },
+  "W027": {
+    "name": "Sumidero Canyon",
+    "description": "A dramatic limestone canyon in Chiapas, Mexico, where towering walls flank the Grijalva River.",
+    "photo": null
+  },
+  "W028": {
+    "name": "Statue of Liberty",
+    "description": "A colossal statue in New York Harbor, symbolizing liberty and welcoming generations of arrivals.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_-_New_York_City.jpg"
+  },
+  "W029": {
+    "name": "Chichén Itzá",
+    "description": "A major ancient Maya city in Yucatán, celebrated for the stepped pyramid of El Castillo.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chich%C3%A9n_Itz%C3%A1_in_2022.jpg"
+  },
+  "W030": {
+    "name": "Teotihuacán",
+    "description": "A monumental pre-Hispanic city near Mexico City, known for its Pyramids of the Sun and Moon.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_a_pie_de_la_Pir%C3%A1mide_de_la_Luna%2C_Teotihuacan.jpg"
+  },
+  "W031": {
+    "name": "Golden Gate Bridge",
+    "description": "San Francisco's landmark suspension bridge spanning the Golden Gate strait in vivid International Orange.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Gate_Bridge_San_Francisco_USA.jpg"
+  },
+  "W032": {
+    "name": "Mount Rushmore",
+    "description": "A South Dakota mountainside carved with portraits of four U.S. presidents.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Rushmore.jpg"
+  },
+  "W033": {
+    "name": "Palenque",
+    "description": "A Maya city in Chiapas, admired for intricate stone carvings, temples, and jungle surroundings.",
+    "photo": null
+  },
+  "W034": {
+    "name": "Monte Albán",
+    "description": "An ancient hilltop city in Oaxaca with plazas, pyramids, and carved stone monuments.",
+    "photo": null
+  },
+  "W035": {
+    "name": "Mesa Verde Cliff Dwellings",
+    "description": "Ancestral Pueblo cliff-side settlements in Colorado, built within sheltered sandstone alcoves.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_Verde_Public_Domain.jpg"
+  },
+  "W036": {
+    "name": "Uxmal",
+    "description": "A richly ornamented Maya city in Yucatán, famous for its finely decorated Puuc-style buildings.",
+    "photo": null
+  },
+  "W037": {
+    "name": "Great Blue Hole",
+    "description": "A giant underwater sinkhole off Belize, distinguished by its deep blue circular opening.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Blue_Hole.jpg"
+  },
+  "W038": {
+    "name": "Arenal Volcano",
+    "description": "A cone-shaped volcano in Costa Rica, surrounded by rainforest, hot springs, and lava-sculpted slopes.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arenal_Volcano_(260577633).jpeg"
+  },
+  "W039": {
+    "name": "Lake Atitlán",
+    "description": "A highland Guatemalan lake formed in a volcanic basin and surrounded by steep volcanoes.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Atitlan%2C_seen_from_San_Marcos.jpg"
+  },
+  "W040": {
+    "name": "The Pitons",
+    "description": "Twin volcanic spires on Saint Lucia's coast, rising sharply above the Caribbean Sea.",
+    "photo": null
+  },
+  "W041": {
+    "name": "Tortuguero National Park",
+    "description": "A Costa Rican coastal park of canals and rainforest, famous for nesting sea turtles.",
+    "photo": null
+  },
+  "W042": {
+    "name": "Corcovado National Park",
+    "description": "A remote Costa Rican rainforest reserve on the Osa Peninsula, exceptionally rich in wildlife.",
+    "photo": null
+  },
+  "W043": {
+    "name": "Cocos Island",
+    "description": "An isolated Pacific island of Costa Rica, prized for marine biodiversity and hammerhead sharks.",
+    "photo": null
+  },
+  "W044": {
+    "name": "Dunn's River Falls",
+    "description": "A terraced Jamaican waterfall where flowing water cascades over natural limestone steps.",
+    "photo": null
+  },
+  "W045": {
+    "name": "El Limón Waterfall",
+    "description": "A jungle waterfall on the Dominican Republic's Samaná Peninsula, plunging into a natural pool.",
+    "photo": null
+  },
+  "W046": {
+    "name": "Tikal",
+    "description": "A great ancient Maya city in Guatemala, where tall temples rise above the rainforest canopy.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tikal_Temple_I_2026.jpg"
+  },
+  "W047": {
+    "name": "Panama Canal (Miraflores Locks)",
+    "description": "The Panama Canal's Pacific-side locks, where ships are raised and lowered between water levels.",
+    "photo": null
+  },
+  "W048": {
+    "name": "Copán Ruins",
+    "description": "A Maya archaeological site in Honduras, noted for elaborate stelae and a hieroglyphic stairway.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cop%C3%A1n_archaeological_site%2C_Honduras_21.jpg"
+  },
+  "W049": {
+    "name": "Antigua Guatemala",
+    "description": "A colonial-era Guatemalan city of cobbled streets, historic churches, and dramatic volcano views.",
+    "photo": null
+  },
+  "W050": {
+    "name": "Old Havana",
+    "description": "Havana's historic core, filled with colonial plazas, pastel buildings, and centuries-old fortifications.",
+    "photo": null
+  },
+  "W051": {
+    "name": "Citadelle Laferrière",
+    "description": "An immense mountaintop fortress in Haiti, built after independence to defend the young nation.",
+    "photo": null
+  },
+  "W052": {
+    "name": "Castillo San Felipe del Morro",
+    "description": "A massive Spanish colonial fort guarding the entrance to San Juan Bay in Puerto Rico.",
+    "photo": null
+  },
+  "W053": {
+    "name": "Brimstone Hill Fortress",
+    "description": "A preserved British hilltop fortress on Saint Kitts, with sweeping views over the Caribbean.",
+    "photo": null
+  },
+  "W054": {
+    "name": "Colonial City of Santo Domingo",
+    "description": "The oldest European-founded urban center in the Americas still inhabited, with significant colonial landmarks.",
+    "photo": null
+  },
+  "W055": {
+    "name": "Angel Falls",
+    "description": "The world's tallest uninterrupted waterfall, dropping from an isolated tabletop mountain in Venezuela.",
+    "photo": null
+  },
+  "W056": {
+    "name": "Mount Roraima",
+    "description": "A dramatic flat-topped tepui mountain shared by Venezuela, Guyana, and Brazil, with a misty summit.",
+    "photo": null
+  },
+  "W057": {
+    "name": "Kaieteur Falls",
+    "description": "A towering single-drop waterfall in Guyana, plunging through remote tropical rainforest.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaieteur-falls.JPG"
+  },
+  "W058": {
+    "name": "Caño Cristales",
+    "description": "A Colombian river nicknamed the 'river of five colors' for its vivid seasonal aquatic plants.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ca%C3%B1o_Cristales_2023.jpg"
+  },
+  "W059": {
+    "name": "Los Roques Archipelago",
+    "description": "A Venezuelan Caribbean archipelago of coral reefs, white-sand islands, and turquoise lagoons.",
+    "photo": null
+  },
+  "W060": {
+    "name": "Orinoco Delta",
+    "description": "A sprawling Venezuelan wetland where the Orinoco River branches through mangroves and forest.",
+    "photo": null
+  },
+  "W061": {
+    "name": "Central Suriname Nature Reserve",
+    "description": "A vast protected Surinamese rainforest conserving waterfalls, inselbergs, and exceptional tropical wildlife.",
+    "photo": null
+  },
+  "W062": {
+    "name": "Chiribiquete National Park",
+    "description": "A remote Colombian rainforest park protecting sandstone plateaus, biodiversity, and ancient rock paintings.",
+    "photo": null
+  },
+  "W063": {
+    "name": "Tatacoa Desert",
+    "description": "An arid Colombian landscape of eroded red and gray badlands, popular for stargazing.",
+    "photo": null
+  },
+  "W064": {
+    "name": "Walled City of Cartagena",
+    "description": "A Caribbean port city encircled by colonial defensive walls and colorful historic streets.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Cartagena%2C_Colombia._Pixabay_3529030.jpg"
+  },
+  "W065": {
+    "name": "Ciudad Perdida",
+    "description": "A secluded pre-Columbian settlement in Colombia's Sierra Nevada, reached by a jungle trek.",
+    "photo": null
+  },
+  "W066": {
+    "name": "San Agustín Archaeological Park",
+    "description": "A Colombian archaeological landscape of monumental stone sculptures and ancient burial sites.",
+    "photo": null
+  },
+  "W067": {
+    "name": "Historic Center of Coro",
+    "description": "A Venezuelan colonial town distinguished by colorful adobe buildings and Dutch-Caribbean influences.",
+    "photo": null
+  },
+  "W068": {
+    "name": "University City of Caracas",
+    "description": "A modernist university campus in Caracas, blending architecture, murals, sculptures, and landscaped spaces.",
+    "photo": null
+  },
+  "W069": {
+    "name": "Gold Museum of Bogotá",
+    "description": "A Bogotá museum renowned for its extraordinary collection of pre-Hispanic goldwork.",
+    "photo": null
+  },
+  "W070": {
+    "name": "Fort Zeelandia (Suriname)",
+    "description": "A historic Dutch colonial fort in Paramaribo, now associated with Suriname's military and political history.",
+    "photo": null
+  },
+  "W071": {
+    "name": "Fort Kyk-Over-Al",
+    "description": "The remains of a Dutch-era fort at the confluence of rivers in Guyana's Essequibo region.",
+    "photo": null
+  },
+  "W072": {
+    "name": "Temple in the Sea",
+    "description": "A Hindu pilgrimage temple in Trinidad, built on reclaimed land in the Gulf of Paria.",
+    "photo": null
+  },
+  "W073": {
+    "name": "Salar de Uyuni",
+    "description": "The world's largest salt flat, a dazzling Bolivian expanse that can reflect the sky after rainfall.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uyuni_Salt_Flats_Bolivia.jpg"
+  },
+  "W074": {
+    "name": "Colca Canyon",
+    "description": "A deep Peruvian canyon known for soaring Andean condors, terraced slopes, and traditional villages.",
+    "photo": null
+  },
+  "W075": {
+    "name": "Atacama Desert",
+    "description": "An exceptionally dry desert in northern Chile, with salt flats, sculpted rocks, and clear skies.",
+    "photo": null
+  },
+  "W076": {
+    "name": "Lake Titicaca",
+    "description": "A high-altitude Andean lake between Peru and Bolivia, rich in living cultural traditions.",
+    "photo": null
+  },
+  "W077": {
+    "name": "Cotopaxi",
+    "description": "An almost perfectly conical, snow-capped active volcano in Ecuador's high Andes.",
+    "photo": null
+  },
+  "W078": {
+    "name": "Galápagos Islands (Santa Cruz)",
+    "description": "A Galápagos island known for giant tortoises, volcanic landscapes, and distinctive wildlife.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/GalapagosIslands.jpeg"
+  },
+  "W079": {
+    "name": "Huascarán National Park",
+    "description": "A Peruvian mountain park protecting tropical glaciers, turquoise lakes, and the Cordillera Blanca peaks.",
+    "photo": null
+  },
+  "W080": {
+    "name": "Pacaya-Samiria Reserve",
+    "description": "A vast Amazonian reserve in Peru, protecting flooded forests, rivers, and diverse wildlife.",
+    "photo": null
+  },
+  "W081": {
+    "name": "Sajama Volcano",
+    "description": "Bolivia's highest mountain, a snow-capped volcano rising above the Andean altiplano.",
+    "photo": null
+  },
+  "W082": {
+    "name": "Machu Picchu",
+    "description": "An Inca citadel perched high in the Peruvian Andes, celebrated for remarkable stonework and scenery.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edin_Krnic_Machu_Picchu_Peru.jpg"
+  },
+  "W083": {
+    "name": "Nazca Lines",
+    "description": "Enormous ancient geoglyphs etched into the Peruvian desert, depicting animals and geometric shapes.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%ADneas_de_Nazca_Ica.jpg"
+  },
+  "W084": {
+    "name": "Tiwanaku",
+    "description": "An influential pre-Inca ceremonial center near Lake Titicaca, known for massive carved stone monuments.",
+    "photo": null
+  },
+  "W085": {
+    "name": "Sacsayhuamán",
+    "description": "A monumental Inca complex above Cusco, distinguished by precisely fitted, zigzagging stone walls.",
+    "photo": null
+  },
+  "W086": {
+    "name": "Chan Chan",
+    "description": "A vast pre-Inca adobe city on Peru's coast, once capital of the Chimú kingdom.",
+    "photo": null
+  },
+  "W087": {
+    "name": "Ingapirca",
+    "description": "Ecuador's best-preserved major Inca archaeological site, featuring finely crafted stone structures.",
+    "photo": null
+  },
+  "W088": {
+    "name": "Historic Center of Quito",
+    "description": "Quito's historic district, noted for ornate colonial churches, plazas, and Andean views.",
+    "photo": null
+  },
+  "W089": {
+    "name": "Historic City of Sucre",
+    "description": "A Bolivian city famed for its whitewashed colonial architecture and role in the nation's independence.",
+    "photo": null
+  },
+  "W090": {
+    "name": "Sacred City of Caral-Supe",
+    "description": "An early monumental urban settlement in Peru, among the oldest known centers of civilization in the Americas.",
+    "photo": null
+  },
+  "W091": {
+    "name": "Iguazú Falls",
+    "description": "A huge waterfall system on the Argentina–Brazil border, surrounded by subtropical rainforest.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Iguazu_falls_01.jpg"
+  },
+  "W092": {
+    "name": "Perito Moreno Glacier",
+    "description": "A spectacular Patagonian glacier known for towering blue ice walls and frequent calving events.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Perito_Moreno_Glacier_(Unsplash).jpg"
+  },
+  "W093": {
+    "name": "Torres del Paine",
+    "description": "A Chilean Patagonian park of granite towers, turquoise lakes, glaciers, and windswept steppe.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torres_del_Paine_National_Park%2C_Chile_(Unsplash).jpg"
+  },
+  "W094": {
+    "name": "Pantanal Wetlands",
+    "description": "One of the world's largest tropical wetlands, stretching across Brazil, Bolivia, and Paraguay.",
+    "photo": null
+  },
+  "W095": {
+    "name": "Lençóis Maranhenses",
+    "description": "A Brazilian coastal park of rolling white dunes and seasonal freshwater lagoons.",
+    "photo": null
+  },
+  "W096": {
+    "name": "Meeting of the Waters (Manaus)",
+    "description": "A striking confluence near Manaus where dark and sandy-colored rivers flow side by side before mixing.",
+    "photo": null
+  },
+  "W097": {
+    "name": "Chapada Diamantina",
+    "description": "A Brazilian highland park of sandstone cliffs, caves, waterfalls, and broad plateaus.",
+    "photo": null
+  },
+  "W098": {
+    "name": "Aconcagua",
+    "description": "The highest mountain outside Asia, towering over Argentina's Andes near the Chilean border.",
+    "photo": null
+  },
+  "W099": {
+    "name": "Beagle Channel",
+    "description": "A scenic sea passage at South America's southern tip, bordered by mountains and islands.",
+    "photo": null
+  },
+  "W100": {
+    "name": "Christ the Redeemer",
+    "description": "An immense Art Deco statue of Jesus overlooking Rio de Janeiro from Corcovado Mountain.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ-the-redeemer.jpeg"
+  },
+  "W101": {
+    "name": "Cathedral of Brasília",
+    "description": "A modernist cathedral in Brazil's capital, marked by sweeping concrete columns and stained glass.",
+    "photo": null
+  },
+  "W102": {
+    "name": "Ouro Preto",
+    "description": "A Brazilian colonial mining town famed for Baroque churches and steep cobbled streets.",
+    "photo": null
+  },
+  "W103": {
+    "name": "São Miguel das Missões",
+    "description": "Ruins of an 18th-century Jesuit mission settlement in southern Brazil.",
+    "photo": null
+  },
+  "W104": {
+    "name": "Obelisk of Buenos Aires",
+    "description": "A soaring white landmark on Buenos Aires's Avenida 9 de Julio, commemorating the city's founding.",
+    "photo": null
+  },
+  "W105": {
+    "name": "Cueva de las Manos",
+    "description": "A Patagonian cave complex famous for prehistoric painted handprints and hunting scenes.",
+    "photo": null
+  },
+  "W106": {
+    "name": "Colonia del Sacramento",
+    "description": "A riverside Uruguayan town with a preserved historic quarter of Portuguese and Spanish architecture.",
+    "photo": null
+  },
+  "W107": {
+    "name": "Historic Quarter of Valparaíso",
+    "description": "A colorful Chilean port city whose hillside neighborhoods are linked by stairways and funiculars.",
+    "photo": null
+  },
+  "W108": {
+    "name": "Humberstone Saltpeter Works",
+    "description": "Ruins of a former nitrate-mining settlement in Chile's Atacama region, recalling industrial boom years.",
+    "photo": null
+  },
+  "W109": {
+    "name": "Geirangerfjord",
+    "description": "A steep-sided Norwegian fjord known for dramatic cliffs, waterfalls, and deep blue water.",
+    "photo": null
+  },
+  "W110": {
+    "name": "Gullfoss",
+    "description": "A powerful two-stage waterfall in Iceland's Golden Circle, plunging into a narrow canyon.",
+    "photo": null
+  },
+  "W111": {
+    "name": "Jökulsárlón Glacier Lagoon",
+    "description": "An Icelandic glacial lagoon where floating icebergs drift toward the Atlantic Ocean.",
+    "photo": null
+  },
+  "W112": {
+    "name": "Cliffs of Moher",
+    "description": "Sheer Atlantic sea cliffs in western Ireland, providing sweeping views and seabird habitats.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cliffs_of_Moher_Apr_05.jpg"
+  },
+  "W113": {
+    "name": "Giant's Causeway",
+    "description": "A Northern Irish shore formed by thousands of interlocking basalt columns from ancient lava flows.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Giants_causeway_Antrim.jpg"
+  },
+  "W114": {
+    "name": "Old Man of Storr",
+    "description": "An iconic rocky pinnacle on Scotland's Isle of Skye, above a rugged landslip landscape.",
+    "photo": null
+  },
+  "W115": {
+    "name": "Wadden Sea",
+    "description": "An extensive tidal-flat ecosystem along the North Sea, vital for migratory birds.",
+    "photo": null
+  },
+  "W116": {
+    "name": "Mont Blanc",
+    "description": "The highest peak in the Alps, rising above glaciers on the France–Italy border.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mont-Blanc.jpg"
+  },
+  "W117": {
+    "name": "Black Forest",
+    "description": "A forested region of southwestern Germany known for wooded ridges, villages, and traditional culture.",
+    "photo": null
+  },
+  "W118": {
+    "name": "Stonehenge",
+    "description": "A prehistoric stone-circle monument in southern England, aligned with important solar events.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge.arp.jpg"
+  },
+  "W119": {
+    "name": "Eiffel Tower",
+    "description": "Paris's iron lattice tower, built for the 1889 World's Fair and now a global landmark.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eiffel_tower%2C_Paris%2C_France.jpg"
+  },
+  "W120": {
+    "name": "Mont-Saint-Michel",
+    "description": "A medieval abbey and village rising from a tidal island off Normandy's coast.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mont_St_Michel_view.jpg"
+  },
+  "W121": {
+    "name": "Neuschwanstein Castle",
+    "description": "A picturesque 19th-century Bavarian castle built for King Ludwig II amid Alpine scenery.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neuschwanstein.jpg"
+  },
+  "W122": {
+    "name": "Cologne Cathedral",
+    "description": "A vast Gothic cathedral beside the Rhine, renowned for its twin spires and stained glass.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cologne_Cathedral_from_the_Northeast.jpg"
+  },
+  "W123": {
+    "name": "Edinburgh Castle",
+    "description": "A historic Scottish fortress perched on volcanic rock overlooking Edinburgh's Old Town.",
+    "photo": null
+  },
+  "W124": {
+    "name": "Historic Centre of Bruges",
+    "description": "A remarkably preserved Belgian medieval cityscape of canals, brick houses, and market squares.",
+    "photo": null
+  },
+  "W125": {
+    "name": "Kinderdijk Windmills",
+    "description": "An iconic Dutch landscape of historic windmills used to manage water in low-lying polders.",
+    "photo": null
+  },
+  "W126": {
+    "name": "Bryggen Wharf",
+    "description": "A row of colorful historic wooden merchants' buildings along the harbor in Bergen, Norway.",
+    "photo": null
+  },
+  "W127": {
+    "name": "Dolomites (Tre Cime di Lavaredo)",
+    "description": "Three monumental limestone peaks in Italy's Dolomites, popular with hikers and climbers.",
+    "photo": null
+  },
+  "W128": {
+    "name": "Mount Etna",
+    "description": "Europe's most active volcano, towering over Sicily with lava flows and smoking craters.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Etna.jpg"
+  },
+  "W129": {
+    "name": "Plitvice Lakes",
+    "description": "A Croatian national park of terraced lakes connected by waterfalls through forested limestone terrain.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Plitvice_Lakes_National_Park_in_Croatia.jpg"
+  },
+  "W130": {
+    "name": "Vikos Gorge",
+    "description": "A deep gorge in northwestern Greece, carved through the Pindus Mountains near traditional stone villages.",
+    "photo": null
+  },
+  "W131": {
+    "name": "Benagil Sea Cave",
+    "description": "A sea cave on Portugal's Algarve coast, famous for its circular skylight and sandy interior.",
+    "photo": null
+  },
+  "W132": {
+    "name": "Mount Teide",
+    "description": "A towering volcano on Tenerife, the highest mountain in Spain and a national park centerpiece.",
+    "photo": null
+  },
+  "W133": {
+    "name": "Picos de Europa",
+    "description": "A rugged mountain range in northern Spain, celebrated for limestone peaks and deep valleys.",
+    "photo": null
+  },
+  "W134": {
+    "name": "Lake Bled",
+    "description": "A Slovenian Alpine lake with an island church and a castle perched above the shore.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Bled_from_Bled_Castle.jpg"
+  },
+  "W135": {
+    "name": "Samaria Gorge",
+    "description": "A long Cretan gorge with steep rock walls, home to distinctive Mediterranean wildlife.",
+    "photo": null
+  },
+  "W136": {
+    "name": "Colosseum",
+    "description": "Rome's enormous ancient amphitheater, where gladiatorial spectacles once entertained huge crowds.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_-_Rome.jpg"
+  },
+  "W137": {
+    "name": "Acropolis of Athens",
+    "description": "A rocky hilltop citadel in Athens, crowned by the Parthenon and other classical temples.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Acropolis%2C_Athens_(53810656855).jpg"
+  },
+  "W138": {
+    "name": "Alhambra",
+    "description": "A palace and fortress complex in Granada, celebrated for intricate Islamic architecture and gardens.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The_whole_Alhambra_Granada_Spain.jpg"
+  },
+  "W139": {
+    "name": "Sagrada Família",
+    "description": "Barcelona's monumental basilica, designed by Antoni Gaudí and famed for its sculptural towers.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/053-Sagrada-Familia.jpg"
+  },
+  "W140": {
+    "name": "Pompeii",
+    "description": "An ancient Roman city preserved beneath volcanic ash after Mount Vesuvius erupted in AD 79.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gradins_Odeon_Pompeii.jpg"
+  },
+  "W141": {
+    "name": "Roman Aqueduct of Segovia",
+    "description": "An exceptionally preserved Roman aqueduct towering over the streets of Segovia, Spain.",
+    "photo": null
+  },
+  "W142": {
+    "name": "Diocletian's Palace",
+    "description": "A vast Roman palace complex in Split, Croatia, now woven into the modern old town.",
+    "photo": null
+  },
+  "W143": {
+    "name": "Leaning Tower of Pisa",
+    "description": "A freestanding bell tower in Pisa, famous for its unintended tilt and Romanesque design.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leaning_Tower_of_Pisa%2C_2023.jpg"
+  },
+  "W144": {
+    "name": "St Mark's Basilica",
+    "description": "Venice's richly decorated cathedral, showcasing Byzantine mosaics and distinctive domes.",
+    "photo": null
+  },
+  "W145": {
+    "name": "Białowieża Forest",
+    "description": "An ancient lowland forest on the Poland–Belarus border, home to European bison.",
+    "photo": null
+  },
+  "W146": {
+    "name": "High Tatras",
+    "description": "A rugged mountain range along the Slovakia–Poland border, with glacial lakes and Alpine trails.",
+    "photo": null
+  },
+  "W147": {
+    "name": "Danube Delta",
+    "description": "A vast Romanian wetland where the Danube spreads into reed beds and channels before the Black Sea.",
+    "photo": null
+  },
+  "W148": {
+    "name": "Mount Kazbek",
+    "description": "A dramatic glacier-covered mountain in Georgia's Caucasus, linked to regional legends.",
+    "photo": null
+  },
+  "W149": {
+    "name": "Mount Elbrus",
+    "description": "The Caucasus's highest summit, a broad, snow-covered volcanic massif in southern Russia.",
+    "photo": null
+  },
+  "W150": {
+    "name": "Lake Sevan",
+    "description": "A large high-altitude Armenian lake bordered by mountains and historic monasteries.",
+    "photo": null
+  },
+  "W151": {
+    "name": "Gobustan Mud Volcanoes",
+    "description": "Azerbaijan's unusual geological landscape of bubbling mud cones and erupting mud volcanoes.",
+    "photo": null
+  },
+  "W152": {
+    "name": "Pravčická Brána",
+    "description": "A huge natural sandstone arch in Czechia's Bohemian Switzerland National Park.",
+    "photo": null
+  },
+  "W153": {
+    "name": "Synevyr Lake",
+    "description": "A scenic mountain lake set among forests in Ukraine's Carpathians.",
+    "photo": null
+  },
+  "W154": {
+    "name": "Prague Castle",
+    "description": "A vast hilltop castle complex overlooking Prague, incorporating palaces, courtyards, and a Gothic cathedral.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prague_Castle_from_Charles_Bridge%2C_August_2025.jpg"
+  },
+  "W155": {
+    "name": "Hungarian Parliament Building",
+    "description": "An ornate neo-Gothic parliament building on Budapest's Danube waterfront.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20211008_Hungarian_Parliament_Building-0386.jpg"
+  },
+  "W156": {
+    "name": "Wawel Royal Castle",
+    "description": "A historic royal complex in Kraków, encompassing a castle and cathedral above the Vistula River.",
+    "photo": null
+  },
+  "W157": {
+    "name": "Bran Castle",
+    "description": "A dramatic medieval fortress in Romania, widely associated with Dracula folklore.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bran_Castle_(27998188663).jpg"
+  },
+  "W158": {
+    "name": "Svetitskhoveli Cathedral",
+    "description": "An important medieval Georgian cathedral in Mtskheta, long central to the nation's religious history.",
+    "photo": null
+  },
+  "W159": {
+    "name": "Geghard Monastery",
+    "description": "An Armenian monastery partly carved into rock, set in a spectacular river gorge.",
+    "photo": null
+  },
+  "W160": {
+    "name": "Sheki Khan's Palace",
+    "description": "An 18th-century Azerbaijani palace celebrated for stained glass, painted interiors, and ornate craftsmanship.",
+    "photo": null
+  },
+  "W161": {
+    "name": "Saint Sophia Cathedral (Kyiv)",
+    "description": "A historic Kyiv cathedral renowned for its Byzantine mosaics, frescoes, and distinctive domes.",
+    "photo": null
+  },
+  "W162": {
+    "name": "Saint Basil's Cathedral",
+    "description": "A colorful 16th-century cathedral on Moscow's Red Square, recognizable by its onion-shaped domes.",
+    "photo": null
+  },
+  "W163": {
+    "name": "Erg Chebbi Dunes",
+    "description": "Rolling golden dunes in Morocco's Sahara, especially striking at sunrise and sunset.",
+    "photo": null
+  },
+  "W164": {
+    "name": "Tassili n'Ajjer",
+    "description": "An Algerian Sahara plateau known for surreal sandstone formations and prehistoric rock art.",
+    "photo": null
+  },
+  "W165": {
+    "name": "Siwa Oasis",
+    "description": "A remote Egyptian desert oasis of palms, salt lakes, and distinctive mud-brick architecture.",
+    "photo": null
+  },
+  "W166": {
+    "name": "White Desert",
+    "description": "An Egyptian desert landscape of chalk-white rock formations shaped by wind erosion.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/White_desert.jpg"
+  },
+  "W167": {
+    "name": "Chott el Djerid",
+    "description": "An enormous salt pan in southern Tunisia, often shimmering with seasonal water and mirages.",
+    "photo": null
+  },
+  "W168": {
+    "name": "Acacus Mountains",
+    "description": "A Saharan mountain landscape in Libya, renowned for dramatic rock formations and ancient paintings.",
+    "photo": null
+  },
+  "W169": {
+    "name": "Todgha Gorge",
+    "description": "A narrow Moroccan canyon with towering limestone walls along a palm-lined river valley.",
+    "photo": null
+  },
+  "W170": {
+    "name": "Hoggar Mountains",
+    "description": "An ancient volcanic mountain range in southern Algeria, surrounded by stark Saharan landscapes.",
+    "photo": null
+  },
+  "W171": {
+    "name": "Ras Mohammed National Park",
+    "description": "An Egyptian Red Sea reserve celebrated for coral reefs, clear water, and diverse marine life.",
+    "photo": null
+  },
+  "W172": {
+    "name": "Pyramids of Giza",
+    "description": "Ancient Egyptian royal pyramids near Cairo, including the Great Pyramid and Great Sphinx nearby.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramids_of_Giza_Egypt.png"
+  },
+  "W173": {
+    "name": "Karnak Temple Complex",
+    "description": "A vast ancient Egyptian temple complex at Luxor, famed for towering columns and sacred precincts.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Karnak_Temple_(9794625015).jpg"
+  },
+  "W174": {
+    "name": "Abu Simbel Temples",
+    "description": "Two monumental rock-cut temples built for Ramesses II and Nefertari in southern Egypt.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Abou_simbel_face.jpg"
+  },
+  "W175": {
+    "name": "Aït Benhaddou",
+    "description": "A fortified earthen village in Morocco, notable for its traditional kasbah architecture.",
+    "photo": null
+  },
+  "W176": {
+    "name": "Medina of Fez",
+    "description": "A labyrinthine old city in Morocco, known for medieval streets, craft workshops, and historic madrasas.",
+    "photo": null
+  },
+  "W177": {
+    "name": "Timgad",
+    "description": "A well-preserved Roman colonial city in Algeria, laid out on a regular street grid.",
+    "photo": null
+  },
+  "W178": {
+    "name": "Amphitheatre of El Jem",
+    "description": "A monumental Roman amphitheater in Tunisia, among the largest surviving in the world.",
+    "photo": null
+  },
+  "W179": {
+    "name": "Leptis Magna",
+    "description": "The ruins of a prosperous Roman city on Libya's Mediterranean coast, featuring grand public buildings.",
+    "photo": null
+  },
+  "W180": {
+    "name": "Pyramids of Meroë",
+    "description": "A group of steep-sided Nubian pyramids in Sudan, built for rulers of the Kingdom of Kush.",
+    "photo": null
+  },
+  "W181": {
+    "name": "Richat Structure",
+    "description": "A giant circular geological formation in Mauritania's Sahara, also called the Eye of the Sahara.",
+    "photo": null
+  },
+  "W182": {
+    "name": "Mount Fogo (Pico do Fogo)",
+    "description": "An active volcano on Cape Verde's Fogo island, rising above a dramatic caldera.",
+    "photo": null
+  },
+  "W183": {
+    "name": "Mount Nimba",
+    "description": "A biologically rich mountain massif at the Guinea–Côte d'Ivoire border, home to rare species.",
+    "photo": null
+  },
+  "W184": {
+    "name": "Comoé National Park",
+    "description": "A savanna and forest national park in Côte d'Ivoire, important for wildlife conservation.",
+    "photo": null
+  },
+  "W185": {
+    "name": "Mole National Park",
+    "description": "Ghana's largest wildlife park, known for savanna landscapes and opportunities to observe elephants.",
+    "photo": null
+  },
+  "W186": {
+    "name": "Zuma Rock",
+    "description": "A massive isolated rock formation near Nigeria's capital, Abuja.",
+    "photo": null
+  },
+  "W187": {
+    "name": "Mount Cameroon",
+    "description": "An active volcano and the highest mountain in West and Central Africa, overlooking the Gulf of Guinea.",
+    "photo": null
+  },
+  "W188": {
+    "name": "Boyoma Falls",
+    "description": "A sequence of powerful cataracts along the Lualaba River near Kisangani in DR Congo.",
+    "photo": null
+  },
+  "W189": {
+    "name": "Lopé National Park",
+    "description": "A Gabonese park protecting rainforest and savanna mosaics alongside archaeological sites.",
+    "photo": null
+  },
+  "W190": {
+    "name": "Great Mosque of Djenné",
+    "description": "An extraordinary adobe mosque in Mali, rebuilt and maintained through traditional communal craftsmanship.",
+    "photo": null
+  },
+  "W191": {
+    "name": "Gorée Island",
+    "description": "An island off Dakar, Senegal, known for colonial architecture and remembrance of Atlantic slavery.",
+    "photo": null
+  },
+  "W192": {
+    "name": "Sankore Mosque (Timbuktu)",
+    "description": "A historic mosque and center of Islamic scholarship in Timbuktu, Mali.",
+    "photo": null
+  },
+  "W193": {
+    "name": "Cape Coast Castle",
+    "description": "A coastal Ghanaian fortress linked to the transatlantic slave trade and its painful history.",
+    "photo": null
+  },
+  "W194": {
+    "name": "Royal Palaces of Abomey",
+    "description": "A complex of royal compounds in Benin associated with the former Kingdom of Dahomey.",
+    "photo": null
+  },
+  "W195": {
+    "name": "Sukur Cultural Landscape",
+    "description": "A Nigerian hilltop cultural landscape with traditional stone architecture and terraced fields.",
+    "photo": null
+  },
+  "W196": {
+    "name": "Osun-Osogbo Sacred Grove",
+    "description": "A sacred Yoruba woodland in Nigeria, containing shrines, sculptures, and ritual spaces.",
+    "photo": null
+  },
+  "W197": {
+    "name": "Foumban Royal Palace",
+    "description": "A royal palace in Cameroon known for its architectural detail and Bamum cultural heritage.",
+    "photo": null
+  },
+  "W198": {
+    "name": "Fortress of São Miguel",
+    "description": "A Portuguese colonial fortress in Luanda, Angola, overlooking the harbor.",
+    "photo": null
+  },
+  "W199": {
+    "name": "Victoria Falls",
+    "description": "A spectacular waterfall on the Zambia–Zimbabwe border, renowned for its enormous spray curtain.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Falls_-_VicFalls3456.jpg"
+  },
+  "W200": {
+    "name": "Mount Kilimanjaro",
+    "description": "Africa's highest mountain, a snow-capped volcanic massif rising from Tanzania's plains.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wikimedia_Kilimanjaro.jpg"
+  },
+  "W201": {
+    "name": "Serengeti National Park",
+    "description": "A vast Tanzanian savanna ecosystem famed for great migrations of wildebeest and zebras.",
+    "photo": null
+  },
+  "W202": {
+    "name": "Ngorongoro Crater",
+    "description": "A huge volcanic caldera in Tanzania, sheltering an exceptional concentration of wildlife.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ngorongoro_Crater%2C_Tanzania_(Unsplash_mRDbYulzkZk).jpg"
+  },
+  "W203": {
+    "name": "Danakil Depression",
+    "description": "An extreme, volcanically active lowland in northeastern Ethiopia, known for salt flats and colorful mineral deposits.",
+    "photo": null
+  },
+  "W204": {
+    "name": "Sossusvlei",
+    "description": "A Namibian salt-and-clay pan surrounded by some of the world's tallest reddish sand dunes.",
+    "photo": null
+  },
+  "W205": {
+    "name": "Table Mountain",
+    "description": "A flat-topped mountain overlooking Cape Town, celebrated for panoramic views and distinctive fynbos.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cape_Town_-_Table_Mountain_seen_from_Waterfront_(1).jpg"
+  },
+  "W206": {
+    "name": "Tsingy de Bemaraha",
+    "description": "A Malagasy landscape of jagged limestone pinnacles, deep crevices, and rare wildlife.",
+    "photo": null
+  },
+  "W207": {
+    "name": "Bazaruto Archipelago",
+    "description": "A Mozambican island group of clear lagoons, coral reefs, and protected marine habitats.",
+    "photo": null
+  },
+  "W208": {
+    "name": "Rock-Hewn Churches of Lalibela",
+    "description": "Remarkable medieval Ethiopian churches carved directly into solid rock, many still used for worship.",
+    "photo": null
+  },
+  "W209": {
+    "name": "Aksum Obelisks",
+    "description": "Ancient Ethiopian carved stone stelae marking royal monuments in the historic city of Aksum.",
+    "photo": null
+  },
+  "W210": {
+    "name": "Lamu Old Town",
+    "description": "A historic Swahili trading town on Kenya's coast, known for coral-stone houses and narrow streets.",
+    "photo": null
+  },
+  "W211": {
+    "name": "Stone Town of Zanzibar",
+    "description": "Zanzibar's old trading district, blending Swahili, Arab, Indian, and European architectural traditions.",
+    "photo": null
+  },
+  "W212": {
+    "name": "Great Zimbabwe",
+    "description": "The stone ruins of a major medieval African city, including impressive dry-stone enclosures.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe.jpg"
+  },
+  "W213": {
+    "name": "Robben Island",
+    "description": "An island prison near Cape Town where Nelson Mandela and other political prisoners were held.",
+    "photo": null
+  },
+  "W214": {
+    "name": "Twyfelfontein Rock Engravings",
+    "description": "A Namibian rock-art landscape featuring thousands of ancient engravings of animals and human activity.",
+    "photo": null
+  },
+  "W215": {
+    "name": "Royal Hill of Ambohimanga",
+    "description": "A sacred royal hill in Madagascar with historic palaces, tombs, and spiritual significance.",
+    "photo": null
+  },
+  "W216": {
+    "name": "Island of Mozambique Historic Town",
+    "description": "A historic island trading town in Mozambique, shaped by centuries of African, Arab, and Portuguese exchange.",
+    "photo": null
+  },
+  "W217": {
+    "name": "Dead Sea",
+    "description": "A hypersaline lake between Jordan and Israel and the West Bank, famous for buoyant water.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Dead_Sea_-_2022.jpg"
+  },
+  "W218": {
+    "name": "Wadi Rum",
+    "description": "Jordan's desert wilderness of sandstone mountains, red dunes, and ancient rock inscriptions.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wadi_Rum_-_01.jpg"
+  },
+  "W219": {
+    "name": "Cappadocia Fairy Chimneys",
+    "description": "Central Turkey's surreal volcanic rock towers and cave dwellings, shaped by long erosion.",
+    "photo": null
+  },
+  "W220": {
+    "name": "Pamukkale Travertines",
+    "description": "Snow-white mineral terraces in western Turkey, formed by deposits from warm calcium-rich springs.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamukkale_-_1.jpg"
+  },
+  "W221": {
+    "name": "Mount Ararat",
+    "description": "A prominent snow-capped volcanic mountain in eastern Turkey, associated with the story of Noah's Ark.",
+    "photo": null
+  },
+  "W222": {
+    "name": "Wadi Shab",
+    "description": "An Omani canyon with turquoise pools, steep cliffs, and a popular hiking route.",
+    "photo": null
+  },
+  "W223": {
+    "name": "Socotra Dragon's Blood Tree Forest",
+    "description": "A Socotran woodland of umbrella-shaped dragon's blood trees, unique to the island's dry landscapes.",
+    "photo": null
+  },
+  "W224": {
+    "name": "Dasht-e Lut",
+    "description": "An immense Iranian desert of dunes, salt plains, and wind-carved ridges.",
+    "photo": null
+  },
+  "W225": {
+    "name": "Edge of the World (Jebel Fihrayn)",
+    "description": "A dramatic escarpment near Riyadh, offering sweeping views across the Arabian desert.",
+    "photo": null
+  },
+  "W226": {
+    "name": "Petra",
+    "description": "An ancient Nabataean city in Jordan, famous for grand monuments carved into rose-red sandstone cliffs.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra%2C_Jordan_(Unsplash).jpg"
+  },
+  "W227": {
+    "name": "Persepolis",
+    "description": "The ceremonial capital of the ancient Achaemenid Empire in Iran, with monumental stone stairways and columns.",
+    "photo": null
+  },
+  "W228": {
+    "name": "Göbekli Tepe",
+    "description": "A Neolithic archaeological site in southeastern Turkey, notable for massive carved stone pillars.",
+    "photo": null
+  },
+  "W229": {
+    "name": "Hagia Sophia",
+    "description": "A landmark Byzantine building in Istanbul, renowned for its great dome and layered religious history.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia%2C_Interior.jpg"
+  },
+  "W230": {
+    "name": "Old City of Jerusalem",
+    "description": "A walled historic district sacred to Judaism, Christianity, and Islam, filled with important religious sites.",
+    "photo": null
+  },
+  "W231": {
+    "name": "Masjid al-Haram",
+    "description": "Islam's holiest mosque in Mecca, surrounding the Kaaba and hosting millions of pilgrims.",
+    "photo": null
+  },
+  "W232": {
+    "name": "Baalbek Roman Temples",
+    "description": "Enormous Roman temple ruins in Lebanon, admired for colossal columns and elaborate stone carving.",
+    "photo": null
+  },
+  "W233": {
+    "name": "Hegra (Al-Hijr)",
+    "description": "A Nabataean archaeological site in Saudi Arabia, famous for monumental rock-cut tomb facades.",
+    "photo": null
+  },
+  "W234": {
+    "name": "Naqsh-e Jahan Square",
+    "description": "A grand historic square in Isfahan, Iran, framed by Safavid-era mosques and palaces.",
+    "photo": null
+  },
+  "W235": {
+    "name": "Issyk-Kul Lake",
+    "description": "A vast alpine lake in Kyrgyzstan, ringed by snowcapped Tian Shan mountains.",
+    "photo": null
+  },
+  "W236": {
+    "name": "Pamir Mountains",
+    "description": "A high Central Asian mountain system with glaciers, stark valleys, and towering peaks.",
+    "photo": null
+  },
+  "W237": {
+    "name": "Charyn Canyon",
+    "description": "A dramatic red sandstone canyon in southeastern Kazakhstan, carved by the Charyn River.",
+    "photo": null
+  },
+  "W238": {
+    "name": "Kolsai Lakes",
+    "description": "A chain of turquoise alpine lakes nestled among forested mountains in Kazakhstan.",
+    "photo": null
+  },
+  "W239": {
+    "name": "Iskanderkul Lake",
+    "description": "A striking glacial lake in Tajikistan's Fann Mountains, surrounded by steep rocky peaks.",
+    "photo": null
+  },
+  "W240": {
+    "name": "Aral Sea Remnants",
+    "description": "The shrinking remains of a once-vast Central Asian lake, illustrating a major environmental disaster.",
+    "photo": null
+  },
+  "W241": {
+    "name": "Yangykala Canyon",
+    "description": "A remote Turkmenistan canyon of layered red, orange, and white rock formations.",
+    "photo": null
+  },
+  "W242": {
+    "name": "Gobi Desert",
+    "description": "An expansive desert across Mongolia and China, with dunes, rocky plains, and fossil beds.",
+    "photo": null
+  },
+  "W243": {
+    "name": "Altai Tavan Bogd",
+    "description": "A rugged mountainous park in western Mongolia, containing high peaks, glaciers, and alpine lakes.",
+    "photo": null
+  },
+  "W244": {
+    "name": "Registan Square",
+    "description": "A grand square in Samarkand, Uzbekistan, framed by three intricately tiled historic madrasas.",
+    "photo": null
+  },
+  "W245": {
+    "name": "Itchan Kala (Khiva)",
+    "description": "Khiva's fortified old town in Uzbekistan, filled with minarets, mosques, and traditional architecture.",
+    "photo": null
+  },
+  "W246": {
+    "name": "Ark of Bukhara",
+    "description": "A monumental historic fortress in Bukhara, once home to the city's ruling emirs.",
+    "photo": null
+  },
+  "W247": {
+    "name": "Ancient Merv",
+    "description": "An important Silk Road archaeological site in Turkmenistan, with ruined fortresses and ancient urban remains.",
+    "photo": null
+  },
+  "W248": {
+    "name": "Parthian Fortresses of Nisa",
+    "description": "The remains of a Parthian royal center in Turkmenistan, enclosed by ancient defensive walls.",
+    "photo": null
+  },
+  "W249": {
+    "name": "Mausoleum of Khoja Ahmed Yasawi",
+    "description": "A monumental, unfinished Timurid mausoleum in Kazakhstan, built for a revered Sufi teacher.",
+    "photo": null
+  },
+  "W250": {
+    "name": "Tash Rabat Caravanserai",
+    "description": "A 15th-century stone caravanserai in the Kyrgyz mountains that sheltered Silk Road travelers.",
+    "photo": null
+  },
+  "W251": {
+    "name": "Hissar Fortress",
+    "description": "An old fortified complex near Dushanbe, Tajikistan, with reconstructed gateways and defensive walls.",
+    "photo": null
+  },
+  "W252": {
+    "name": "Erdene Zuu Monastery",
+    "description": "One of Mongolia's oldest Buddhist monasteries, built near the former Mongol capital of Karakorum.",
+    "photo": null
+  },
+  "W253": {
+    "name": "Mount Everest",
+    "description": "Earth's highest mountain above sea level, straddling the Nepal–China border in the Himalayas.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Everest.jpg"
+  },
+  "W254": {
+    "name": "K2",
+    "description": "The world's second-highest mountain, a steep and notoriously challenging peak in the Karakoram range.",
+    "photo": null
+  },
+  "W255": {
+    "name": "Valley of Flowers",
+    "description": "A Himalayan meadow in India renowned for its colorful alpine wildflowers during summer.",
+    "photo": null
+  },
+  "W256": {
+    "name": "Sundarbans Mangrove Forest",
+    "description": "A vast mangrove delta in India and Bangladesh, home to tigers and intricate tidal waterways.",
+    "photo": null
+  },
+  "W257": {
+    "name": "Cox's Bazar Beach",
+    "description": "A long sandy beach on Bangladesh's southeast coast, stretching beside the Bay of Bengal.",
+    "photo": null
+  },
+  "W258": {
+    "name": "Horton Plains (World's End)",
+    "description": "A Sri Lankan highland plateau whose dramatic cliff edge is known as World's End.",
+    "photo": null
+  },
+  "W259": {
+    "name": "Baa Atoll",
+    "description": "A Maldivian coral atoll recognized for rich marine biodiversity, including seasonal manta ray gatherings.",
+    "photo": null
+  },
+  "W260": {
+    "name": "Phobjikha Valley",
+    "description": "A broad glacial valley in Bhutan, famous as a winter refuge for black-necked cranes.",
+    "photo": null
+  },
+  "W261": {
+    "name": "Lonar Crater Lake",
+    "description": "A circular lake in Maharashtra, India, formed by a meteorite impact in ancient basalt.",
+    "photo": null
+  },
+  "W262": {
+    "name": "Taj Mahal",
+    "description": "A gleaming white-marble mausoleum in Agra, built by Mughal emperor Shah Jahan.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Taj-Mahal_CC0.jpg"
+  },
+  "W263": {
+    "name": "Sigiriya Rock Fortress",
+    "description": "An ancient Sri Lankan palace and fortress atop a towering rock, famous for frescoes and gardens.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya_palacio.jpg"
+  },
+  "W264": {
+    "name": "Hampi",
+    "description": "A vast ruined imperial city in Karnataka, India, celebrated for Vijayanagara temples and stone architecture.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampi_2025.jpg"
+  },
+  "W265": {
+    "name": "Mohenjo-daro",
+    "description": "A major Indus Valley civilization city in Pakistan, known for sophisticated ancient urban planning.",
+    "photo": null
+  },
+  "W266": {
+    "name": "Tiger's Nest Monastery",
+    "description": "A cliffside Buddhist monastery in Bhutan, spectacularly perched above the Paro Valley.",
+    "photo": null
+  },
+  "W267": {
+    "name": "Boudhanath Stupa",
+    "description": "A monumental Buddhist stupa in Kathmandu, surrounded by shrines and prayer flags.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudhanath%2C_main_stupa.jpg"
+  },
+  "W268": {
+    "name": "Ajanta Caves",
+    "description": "A group of ancient Buddhist cave sanctuaries in India, renowned for exquisite murals and sculpture.",
+    "photo": null
+  },
+  "W269": {
+    "name": "Qutub Minar",
+    "description": "A soaring early Delhi Sultanate minaret, decorated with intricate bands of stone carving.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Qutub_Minar_(54342718682).jpg"
+  },
+  "W270": {
+    "name": "Sixty Dome Mosque",
+    "description": "A historic brick mosque in Bagerhat, Bangladesh, notable for rows of domes and pillars.",
+    "photo": null
+  },
+  "W271": {
+    "name": "Mount Fuji",
+    "description": "Japan's highest mountain, a near-symmetrical volcanic cone revered in art and culture.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Fuji_from_high_altitude%3B_2014.jpg"
+  },
+  "W272": {
+    "name": "Zhangjiajie Sandstone Pillars",
+    "description": "Otherworldly quartz-sandstone towers rising through forest in China's Zhangjiajie region.",
+    "photo": null
+  },
+  "W273": {
+    "name": "Jiuzhaigou Valley",
+    "description": "A mountain valley in Sichuan, China, known for vividly colored lakes and cascading waterfalls.",
+    "photo": null
+  },
+  "W274": {
+    "name": "Guilin Karst (Li River)",
+    "description": "A Chinese river landscape of dramatic limestone karst peaks reflected in winding waterways.",
+    "photo": null
+  },
+  "W275": {
+    "name": "Lake Baikal",
+    "description": "The world's deepest freshwater lake, in Siberia, renowned for remarkable endemic species.",
+    "photo": null
+  },
+  "W276": {
+    "name": "Yakushima Forest",
+    "description": "A lush Japanese island forest famous for ancient cedar trees, moss, and high rainfall.",
+    "photo": null
+  },
+  "W277": {
+    "name": "Huangshan (Yellow Mountains)",
+    "description": "A Chinese mountain range of granite spires, sea-of-cloud views, and wind-shaped pines.",
+    "photo": null
+  },
+  "W278": {
+    "name": "Hallasan (Jeju)",
+    "description": "A volcanic mountain and national park on South Korea's Jeju Island, with a summit crater.",
+    "photo": null
+  },
+  "W279": {
+    "name": "Lake Khövsgöl",
+    "description": "A deep, clear freshwater lake in northern Mongolia, surrounded by forested mountain ranges.",
+    "photo": null
+  },
+  "W280": {
+    "name": "Great Wall (Mutianyu)",
+    "description": "A scenic restored section of China's Great Wall winding across wooded mountain ridges.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Wall_of_China_July_2006.JPG"
+  },
+  "W281": {
+    "name": "Forbidden City",
+    "description": "Beijing's vast former imperial palace, a masterpiece of traditional Chinese architecture.",
+    "photo": null
+  },
+  "W282": {
+    "name": "Terracotta Army",
+    "description": "Thousands of life-size clay soldiers buried to guard the tomb of China's first emperor.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Terracotta_Warriors.jpg"
+  },
+  "W283": {
+    "name": "Leshan Giant Buddha",
+    "description": "An enormous seated Buddha statue carved into a cliff at the meeting of three rivers in China.",
+    "photo": null
+  },
+  "W284": {
+    "name": "Himeji Castle",
+    "description": "A spectacular white Japanese feudal castle renowned for its elegant defensive architecture.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Himeji_castle.jpg"
+  },
+  "W285": {
+    "name": "Fushimi Inari Taisha",
+    "description": "A Kyoto Shinto shrine celebrated for its winding paths lined with vermilion torii gates.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi-Inari.jpg"
+  },
+  "W286": {
+    "name": "Gyeongbokgung Palace",
+    "description": "A grand royal palace in Seoul, first built during Korea's Joseon dynasty.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gyeongbokgung_Palace%2C_Seoul%2C_South_Korea_Aug_24%2C_2025_09-04-51_AM.jpeg"
+  },
+  "W287": {
+    "name": "Bulguksa Temple",
+    "description": "A historic Buddhist temple in Gyeongju, South Korea, noted for elegant stonework and shrines.",
+    "photo": null
+  },
+  "W288": {
+    "name": "Genghis Khan Equestrian Statue",
+    "description": "An immense stainless-steel statue of Genghis Khan on horseback outside Ulaanbaatar, Mongolia.",
+    "photo": null
+  },
+  "W289": {
+    "name": "Ha Long Bay",
+    "description": "A spectacular Vietnamese bay dotted with steep limestone islands rising from emerald waters.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20190926_Ha_Long_Bay-40.jpg"
+  },
+  "W290": {
+    "name": "Sơn Đoòng Cave",
+    "description": "An enormous cave in central Vietnam, containing giant passages, underground rivers, and its own ecosystems.",
+    "photo": null
+  },
+  "W291": {
+    "name": "Komodo National Park",
+    "description": "An Indonesian island park famed for wild Komodo dragons, rugged hills, and coral reefs.",
+    "photo": null
+  },
+  "W292": {
+    "name": "Mount Bromo",
+    "description": "An active volcano in eastern Java, celebrated for sunrise views over a dramatic caldera.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt._Bromo%2C_Indonesia.jpg"
+  },
+  "W293": {
+    "name": "Raja Ampat",
+    "description": "A remote Indonesian archipelago with spectacular coral reefs, limestone islets, and marine diversity.",
+    "photo": null
+  },
+  "W294": {
+    "name": "Chocolate Hills",
+    "description": "Hundreds of rounded limestone hills across Bohol, Philippines, turning brown in the dry season.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_Hills%2C_Bohol_(1).jpg"
+  },
+  "W295": {
+    "name": "Puerto Princesa Subterranean River",
+    "description": "An underground river system in Palawan, Philippines, flowing through limestone caverns toward the sea.",
+    "photo": null
+  },
+  "W296": {
+    "name": "Mount Kinabalu",
+    "description": "The highest mountain in Malaysia, rising above biodiverse rainforest on the island of Borneo.",
+    "photo": null
+  },
+  "W297": {
+    "name": "Kuang Si Falls",
+    "description": "A multilevel waterfall in Laos, renowned for bright turquoise pools amid tropical forest.",
+    "photo": null
+  },
+  "W298": {
+    "name": "Angkor Wat",
+    "description": "A monumental Khmer temple complex in Cambodia, celebrated for its towers, carvings, and symmetry.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_in_Cambodia.jpg"
+  },
+  "W299": {
+    "name": "Borobudur",
+    "description": "A vast ninth-century Buddhist monument in Java, constructed as a stepped stone mandala.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/BorobudurView.jpg"
+  },
+  "W300": {
+    "name": "Bagan Temples",
+    "description": "A sprawling archaeological plain in Myanmar, dotted with thousands of ancient Buddhist temples.",
+    "photo": null
+  },
+  "W301": {
+    "name": "Hoi An Ancient Town",
+    "description": "A preserved Vietnamese trading town known for lantern-lit streets and diverse historic architecture.",
+    "photo": null
+  },
+  "W302": {
+    "name": "Banaue Rice Terraces",
+    "description": "Ancient rice terraces sculpted into steep Philippine mountain slopes by Indigenous Ifugao communities.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Banaue_Rice_Terraces_2018-11.jpg"
+  },
+  "W303": {
+    "name": "Ayutthaya Historic City",
+    "description": "The ruins of Siam's former capital in Thailand, featuring brick temples and towering prangs.",
+    "photo": null
+  },
+  "W304": {
+    "name": "Imperial City of Huế",
+    "description": "A walled imperial palace complex in Vietnam, seat of the Nguyễn dynasty in Huế.",
+    "photo": null
+  },
+  "W305": {
+    "name": "Pha That Luang",
+    "description": "A monumental gold-covered Buddhist stupa in Vientiane, a national symbol of Laos.",
+    "photo": null
+  },
+  "W306": {
+    "name": "George Town Historic City",
+    "description": "The historic center of Penang's George Town, celebrated for multicultural shophouses and street life.",
+    "photo": null
+  },
+  "W307": {
+    "name": "Great Barrier Reef",
+    "description": "The world's largest coral reef system, extending along Australia's northeastern coast.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Great-barrier-reef.jpg"
+  },
+  "W308": {
+    "name": "Uluru",
+    "description": "An immense sandstone monolith in central Australia, deeply significant to the Anangu Traditional Owners.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulu%E1%B9%9Fu_(Ayers_Rock)%2C_Sunset.jpg"
+  },
+  "W309": {
+    "name": "Milford Sound (Piopiotahi)",
+    "description": "A majestic New Zealand fjord of sheer peaks, rainforest, and plunging waterfalls.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MilfordSound8984.jpg"
+  },
+  "W310": {
+    "name": "Aoraki / Mount Cook",
+    "description": "New Zealand's highest mountain, rising above glaciers in the Southern Alps.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aoraki_2024.jpg"
+  },
+  "W311": {
+    "name": "Daintree Rainforest",
+    "description": "An ancient tropical rainforest in Queensland, Australia, famous for rare plants and distinctive wildlife.",
+    "photo": null
+  },
+  "W312": {
+    "name": "Twelve Apostles",
+    "description": "A row of striking limestone sea stacks along Australia's Great Ocean Road.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Twelve-apostles.jpg"
+  },
+  "W313": {
+    "name": "Cradle Mountain",
+    "description": "A jagged mountain above a glacial lake in Tasmania, surrounded by alpine wilderness.",
+    "photo": null
+  },
+  "W314": {
+    "name": "Tongariro National Park",
+    "description": "A volcanic New Zealand landscape with active craters, emerald lakes, and important Māori cultural sites.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongariro_National_Park%2C_New_Zealand_(Unsplash_EA2A1mUvHgI).jpg"
+  },
+  "W315": {
+    "name": "Yasawa Islands",
+    "description": "A chain of tropical Fijian islands with white beaches, reefs, and volcanic hills.",
+    "photo": null
+  },
+  "W316": {
+    "name": "Rock Islands Southern Lagoon",
+    "description": "A Palauan lagoon of forested limestone islands, coral reefs, and remarkable marine habitats.",
+    "photo": null
+  },
+  "W317": {
+    "name": "Mount Yasur",
+    "description": "An active volcano on Tanna, Vanuatu, known for visible lava activity and frequent eruptions.",
+    "photo": null
+  },
+  "W318": {
+    "name": "Mount Wilhelm",
+    "description": "Papua New Guinea's highest mountain, a rugged peak of high-altitude grasslands and alpine valleys.",
+    "photo": null
+  },
+  "W319": {
+    "name": "Moai Statues of Rapa Nui (Ahu Tongariki)",
+    "description": "Ahu Tongariki's restored row of colossal moai statues, carved by the Rapa Nui people.",
+    "photo": null
+  },
+  "W320": {
+    "name": "Sydney Opera House",
+    "description": "A celebrated Australian performing arts complex, famous for its sail-like roof shells.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sydney_Opera_House_(2017).jpg"
+  },
+  "W321": {
+    "name": "Nan Madol",
+    "description": "An ancient ceremonial center in Micronesia, built from basalt structures on artificial islets.",
+    "photo": null
+  },
+  "W322": {
+    "name": "Kakadu Ubirr Rock Art",
+    "description": "Ancient Aboriginal rock paintings at Ubirr in Kakadu, depicting animals, people, and cultural stories.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ubirr_rock_art_Jul2013_01.jpg"
+  },
+  "W323": {
+    "name": "Port Arthur Historic Site",
+    "description": "A preserved convict-era settlement in Tasmania, recalling Australia's colonial penal history.",
+    "photo": null
+  },
+  "W324": {
+    "name": "Budj Bim Cultural Landscape",
+    "description": "An ancient Aboriginal aquaculture landscape in Victoria, featuring stone channels and eel-trapping systems.",
+    "photo": null
+  },
+  "W325": {
+    "name": "Waitangi Treaty Grounds",
+    "description": "A historically significant New Zealand site where the Treaty of Waitangi was signed in 1840.",
+    "photo": null
+  },
+  "W326": {
+    "name": "Auckland Sky Tower",
+    "description": "Auckland's tall observation and communications tower, offering panoramic views of the city and harbor.",
+    "photo": null
+  },
+  "W327": {
+    "name": "Ha'amonga 'a Maui Trilithon",
+    "description": "An ancient coral-limestone trilithon in Tonga, associated with the kingdom's early history.",
+    "photo": null
+  },
+  "W328": {
+    "name": "Pulemelei Mound",
+    "description": "A large ancient earthen mound in Samoa, associated with chiefly ceremonies and oral traditions.",
+    "photo": null
+  },
+  "W329": {
+    "name": "Levuka Historical Port Town",
+    "description": "Fiji's first colonial capital, a historic Pacific port town with preserved wooden buildings.",
+    "photo": null
+  },
+  "W330": {
+    "name": "Kuk Early Agricultural Site",
+    "description": "An archaeological landscape in Papua New Guinea containing evidence of early wetland agriculture.",
+    "photo": null
+  },
+  "W331": {
+    "name": "Mount Erebus",
+    "description": "An active volcano on Antarctica's Ross Island, famous for a persistent lava lake.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt_erebus.jpg"
+  },
+  "W332": {
+    "name": "McMurdo Dry Valleys",
+    "description": "Antarctic ice-free valleys with stark rocky terrain, dry conditions, and unusual ecosystems.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vernice_Anderson_and_Laurence_M._Gould%2C_McMurdo_Dry_Valleys_1977.jpg"
+  },
+  "W333": {
+    "name": "Ross Ice Shelf",
+    "description": "An immense floating ice shelf along Antarctica's Ross Sea, fed by continental glaciers.",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ross_Ice_Shelf.jpg"
+  },
+  "W334": {
+    "name": "Lemaire Channel",
+    "description": "A narrow Antarctic waterway between steep icy mountains, often lined with icebergs.",
+    "photo": null
+  },
+  "W335": {
+    "name": "Deception Island",
+    "description": "An Antarctic volcanic island with a flooded caldera, geothermal features, and historic whaling remains.",
+    "photo": null
+  },
+  "W336": {
+    "name": "Lake Vostok",
+    "description": "An enormous freshwater lake buried beneath kilometers of Antarctic ice, studied through geophysical research.",
+    "photo": null
+  }
+}
