@@ -8,6 +8,7 @@ import {
   classifyRegionLabelKind,
   regionZoomRangeForKind,
 } from '@/constants/map-label-tiers';
+import { SUPPRESSED_REGION_LABEL_NE_IDS } from '@/constants/wonder-region-label-suppressions';
 
 // [west, south, east, north]
 export type MapBounds = [
@@ -136,6 +137,10 @@ export function generateVisibleRegionLabels(
   const features: Feature<Point>[] = [];
 
   for (const region of regions) {
+    if (SUPPRESSED_REGION_LABEL_NE_IDS.has(region.id)) {
+      continue;
+    }
+
     const candidate = chooseRegionLabel(
       region,
       bounds

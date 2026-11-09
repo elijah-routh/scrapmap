@@ -8,8 +8,8 @@ import {
 import type {
   Feature,
   FeatureCollection,
-  Polygon,
   MultiPolygon,
+  Polygon,
 } from 'geojson';
 
 import { BASEMAP_TOP_LAYER_ID } from '@/constants/map';
@@ -29,9 +29,41 @@ const EMPTY_REGIONS: FeatureCollection<RegionGeometry> = {
   features: [],
 };
 
-// Build a lookup once rather than searching the entire
-// GeoJSON dataset whenever the user selects a region.
-const regionsById = new Map<string, Feature<RegionGeometry>>();
+function appendPolygonCoords(
+  target: MultiPolygon['coordinates'],
+  geometry: RegionGeometry
+) {
+  if (geometry.type === 'Polygon') {
+    target.push(geometry.coordinates);
+    return;
+  }
+
+  for (const polygon of geometry.coordinates) {
+    target.push(polygon);
+  }
+}
+
+function mergeRegionParts(
+  features: Feature<RegionGeometry>[]
+): Feature<RegionGeometry> {
+  const coordinates: MultiPolygon['coordinates'] = [];
+
+  for (const feature of features) {
+    appendPolygonCoords(coordinates, feature.geometry);
+  }
+
+  return {
+    type: 'Feature',
+    properties: features[0].properties,
+    geometry: {
+      type: 'MultiPolygon',
+      coordinates,
+    },
+  };
+}
+
+/** Natural Earth may ship several features with the same NE_ID (disjoint parts). */
+const regionPartsById = new Map<string, Feature<RegionGeometry>[]>();
 
 for (const feature of geographyRegions.features) {
   if (
@@ -47,10 +79,10 @@ for (const feature of geographyRegions.features) {
     continue;
   }
 
-  regionsById.set(
-    String(id),
-    feature as Feature<RegionGeometry>,
-  );
+  const key = String(id);
+  const parts = regionPartsById.get(key) ?? [];
+  parts.push(feature as Feature<RegionGeometry>);
+  regionPartsById.set(key, parts);
 }
 
 export function SelectedRegionOutline({
@@ -61,17 +93,22 @@ export function SelectedRegionOutline({
       return EMPTY_REGIONS;
     }
 
-    const region = regionsById.get(String(selection.id));
+    const parts = regionPartsById.get(String(selection.id));
 
-    if (!region) {
+    if (!parts?.length) {
       console.warn(
         'Region geometry not found:',
         selection.name,
-        selection.id,
+        selection.id
       );
 
       return EMPTY_REGIONS;
     }
+
+    const region =
+      parts.length === 1
+        ? parts[0]
+        : mergeRegionParts(parts);
 
     return {
       type: 'FeatureCollection',
@@ -84,7 +121,6 @@ export function SelectedRegionOutline({
       id="selected-region-source"
       data={selectedGeometry}
     >
-      {/* Subtle transparent region highlight */}
       <Layer
         id="selected-region-fill"
         type="fill"
@@ -95,7 +131,6 @@ export function SelectedRegionOutline({
         }}
       />
 
-      {/* Region boundary */}
       <Layer
         id="selected-region-outline"
         type="line"

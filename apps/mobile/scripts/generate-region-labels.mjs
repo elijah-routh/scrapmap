@@ -18,7 +18,8 @@ const regions = JSON.parse(
   fs.readFileSync(INPUT_PATH, 'utf8')
 );
 
-const output = [];
+/** @type {Map<number, object>} */
+const mergedByNeId = new Map();
 
 for (const feature of regions.features) {
   const geometry = feature.geometry;
@@ -34,13 +35,12 @@ for (const feature of regions.features) {
   const properties = feature.properties ?? {};
 
   const name = properties.LABEL || properties.NAME;
+  const neId = properties.NE_ID;
 
-  if (typeof name !== 'string' || !name.trim()) {
+  if (typeof name !== 'string' || !name.trim() || neId == null) {
     continue;
   }
 
-  // A Polygon has one polygon part.
-  // A MultiPolygon contains multiple polygon parts.
   const polygonParts =
     geometry.type === 'Polygon'
       ? [geometry.coordinates]
@@ -72,22 +72,33 @@ for (const feature of regions.features) {
     });
   }
 
-  // Largest polygons first.
-  candidates.sort((a, b) => b.area - a.area);
-
   if (candidates.length === 0) {
     continue;
   }
 
-  output.push({
-    id: properties.NE_ID,
+  const existing = mergedByNeId.get(neId);
+
+  if (existing) {
+    existing.candidates.push(...candidates);
+    continue;
+  }
+
+  mergedByNeId.set(neId, {
+    id: neId,
     name,
     featureClass: properties.FEATURECLA,
     minLabel: properties.MIN_LABEL ?? null,
     maxLabel: properties.MAX_LABEL ?? null,
     scalerank: properties.SCALERANK ?? null,
-    candidates,
+    candidates: [...candidates],
   });
+}
+
+const output = [];
+
+for (const region of mergedByNeId.values()) {
+  region.candidates.sort((a, b) => b.area - a.area);
+  output.push(region);
 }
 
 fs.writeFileSync(

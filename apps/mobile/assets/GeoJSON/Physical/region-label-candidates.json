@@ -5909,23 +5909,6 @@
     "scalerank": 1,
     "candidates": [
       {
-        "area": 58258790.643436946,
-        "coordinates": [
-          -75.05003821522877,
-          45.62515900272848
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1159104271,
-    "name": "CANADIAN SHIELD",
-    "featureClass": "Tundra",
-    "minLabel": 3,
-    "maxLabel": 6,
-    "scalerank": 1,
-    "candidates": [
-      {
         "area": 4383835995933.8325,
         "coordinates": [
           -92.43281249999995,
@@ -6028,6 +6011,13 @@
         "coordinates": [
           -109.03481445312497,
           67.93059082031255
+        ]
+      },
+      {
+        "area": 58258790.643436946,
+        "coordinates": [
+          -75.05003821522877,
+          45.62515900272848
         ]
       },
       {
@@ -8064,6 +8054,13 @@
     "scalerank": 1,
     "candidates": [
       {
+        "area": 226378591249.47498,
+        "coordinates": [
+          -113.38164221913503,
+          -84.76984027555227
+        ]
+      },
+      {
         "area": 206895450860.8723,
         "coordinates": [
           162.5634871753962,
@@ -8141,23 +8138,6 @@
         "coordinates": [
           -60.72318345516807,
           -63.882201129946026
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1159104505,
-    "name": "Transantarctic Mountains",
-    "featureClass": "Range/mtn",
-    "minLabel": 2,
-    "maxLabel": 6,
-    "scalerank": 1,
-    "candidates": [
-      {
-        "area": 226378591249.47498,
-        "coordinates": [
-          -113.38164221913503,
-          -84.76984027555227
         ]
       }
     ]
@@ -11809,6 +11789,13 @@
           -74.58623206288499,
           -13.510186456255951
         ]
+      },
+      {
+        "area": 114608505675.25063,
+        "coordinates": [
+          -77.43105017811936,
+          3.2754275574159664
+        ]
       }
     ]
   },
@@ -11860,34 +11847,7 @@
           -76.15611731679127,
           -8.888726495318394
         ]
-      }
-    ]
-  },
-  {
-    "id": 1159103969,
-    "name": "CORD. OCCIDENTAL",
-    "featureClass": "Range/mtn",
-    "minLabel": 4,
-    "maxLabel": 8,
-    "scalerank": 3,
-    "candidates": [
-      {
-        "area": 114608505675.25063,
-        "coordinates": [
-          -77.43105017811936,
-          3.2754275574159664
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1159103971,
-    "name": "CORD. CENTRAL",
-    "featureClass": "Range/mtn",
-    "minLabel": 5,
-    "maxLabel": 8,
-    "scalerank": 3,
-    "candidates": [
+      },
       {
         "area": 140277849434.0031,
         "coordinates": [
@@ -12107,17 +12067,7 @@
           37.799937370708705,
           5.173834539837827
         ]
-      }
-    ]
-  },
-  {
-    "id": 1159103991,
-    "name": "GREAT RIFT VALLEY",
-    "featureClass": "Valley",
-    "minLabel": 3.6,
-    "maxLabel": 8,
-    "scalerank": 3,
-    "candidates": [
+      },
       {
         "area": 246973768685.754,
         "coordinates": [
