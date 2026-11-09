@@ -6,10 +6,11 @@ import {
 } from '@maplibre/maplibre-react-native';
 
 import {
-  Image,
   StyleSheet,
   View,
 } from 'react-native';
+
+import { DetailedAtlas } from '@/components/map/layers/detailed-atlas';
 
 import { PhysicalLabels } from '@/components/map/layers/physical-labels';
 
@@ -19,10 +20,10 @@ import { SelectedRegionOutline } from
 import type { MapSelection } from '@/types/map-selection';
 
 import {
+  OFFLINE_MAP_STYLE,
   WORLD_MAX_ZOOM,
   WORLD_MIN_ZOOM,
   WORLD_VIEW,
-  createAtlasStyle,
 } from '@/constants/map';
 
 import {
@@ -38,31 +39,6 @@ type WorldMapProps = {
   selection: MapSelection | null;
   onSelectFeature: (selection: MapSelection) => void;
 };
-
-// --------------------------------------------------
-// Atlas image
-// --------------------------------------------------
-
-const simpleAtlas = Image.resolveAssetSource(
-  require('../../assets/maps/SimpleAtlasDraft.png'),
-);
-
-const detailedAtlas = Image.resolveAssetSource(
-  require('../../assets/maps/AtlasZoomedDraft.png'),
-);
-
-if (!simpleAtlas?.uri) {
-  throw new Error('Simple atlas image could not be resolved.');
-}
-
-if (!detailedAtlas?.uri) {
-  throw new Error('Detailed atlas image could not be resolved.');
-}
-
-const mapStyle = createAtlasStyle({
-  simpleUrl: simpleAtlas.uri,
-  detailedUrl: detailedAtlas.uri,
-});
 
 // --------------------------------------------------
 // Component
@@ -95,7 +71,7 @@ export function WorldMap({
       <Map
         ref={mapRef}
         style={styles.map}
-        mapStyle={mapStyle}
+        mapStyle={OFFLINE_MAP_STYLE}
 
         onDidFinishLoadingMap={async () => {
           const bounds = await mapRef.current?.getBounds();
@@ -116,6 +92,8 @@ export function WorldMap({
           minZoom={WORLD_MIN_ZOOM}
           maxZoom={WORLD_MAX_ZOOM}
         />
+
+        <DetailedAtlas />
 
         {/* Highlight selected geographical region */}
         <SelectedRegionOutline
