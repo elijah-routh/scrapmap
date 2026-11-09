@@ -13,6 +13,7 @@ import {
 import { DetailedAtlas } from '@/components/map/layers/detailed-atlas';
 
 import { PhysicalLabels } from '@/components/map/layers/physical-labels';
+import { WonderLabels } from '@/components/map/layers/wonder-labels';
 
 import { SelectedRegionOutline } from
   '@/components/map/layers/selected-region-outline';
@@ -107,6 +108,8 @@ export function WorldMap({
           visibleBounds={visibleBounds}
           onLabelPress={onSelectFeature}
         />
+
+        <WonderLabels onLabelPress={onSelectFeature} />
       </Map>
     </View>
   );

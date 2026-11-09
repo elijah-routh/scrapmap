@@ -15,7 +15,7 @@ export const WORLD_MIN_ZOOM = 0;
  * Camera may zoom past the archive so MapLibre enlarges the zoom-5 tiles
  * instead of requesting tiles that were never exported.
  */
-export const WORLD_MAX_ZOOM = 8;
+export const WORLD_MAX_ZOOM = 5;
 
 /**
  * Bundled archive. `pmtiles://` selects the PMTiles reader; `asset://` reads
