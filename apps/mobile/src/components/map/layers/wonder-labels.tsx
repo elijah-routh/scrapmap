@@ -1,6 +1,6 @@
 import { GeoJSONSource } from '@maplibre/maplibre-react-native';
 
-import type { FeatureCollection } from 'geojson';
+import type { FeatureCollection, Point } from 'geojson';
 
 import { SymbolLabelPair } from '@/components/map/layers/symbol-label-pair';
 import { LABEL_TEXT_SIZE } from '@/constants/map-label-tiers';
@@ -12,8 +12,7 @@ import {
   WONDER_SORT_KEY,
 } from '@/utils/map/label-expressions';
 
-const wonderPoints =
-  require('@/assets/GeoJSON/Wonders/map_wonders_336.json') as FeatureCollection;
+import { emptyPointCollection } from '@/utils/map/label-offset-placement';
 
 const WONDER_STYLE = {
   color: '#3D5C44',
@@ -21,13 +20,17 @@ const WONDER_STYLE = {
   haloWidth: 1,
 };
 
+const EMPTY_COLLECTION = emptyPointCollection();
+
 type WonderLabelsProps = {
   visible?: boolean;
+  wonderLabels?: FeatureCollection<Point>;
   onLabelPress?: (selection: MapSelection) => void;
 };
 
 export function WonderLabels({
   visible = true,
+  wonderLabels = EMPTY_COLLECTION,
   onLabelPress,
 }: WonderLabelsProps) {
   if (!visible) {
@@ -37,7 +40,7 @@ export function WonderLabels({
   return (
     <GeoJSONSource
       id="wonder-points-source"
-      data={wonderPoints}
+      data={wonderLabels}
       onPress={(event) => {
         const feature = event.nativeEvent.features?.[0];
         const name = feature?.properties?.name;

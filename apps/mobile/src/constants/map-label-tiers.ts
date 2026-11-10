@@ -18,6 +18,13 @@ export const LABEL_TEXT_SIZE = {
   wonder: 12,
 } as const;
 
+export const LABEL_PLACEMENT = {
+  charWidthRatio: 0.55,
+  lineHeightRatio: 1.2,
+  /** Matches typical symbol `text-padding` plus halo slack. */
+  paddingPx: 10,
+} as const;
+
 export type RegionLabelKind =
   | 'continent'
   | 'large'

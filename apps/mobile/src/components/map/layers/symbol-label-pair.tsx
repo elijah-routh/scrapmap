@@ -38,6 +38,11 @@ export function SymbolLabelPair({
     'text-font': MAP_LABEL_FONTS,
     'text-size': textSize,
     'text-anchor': 'center',
+    'text-offset': [
+      'coalesce',
+      ['get', 'textOffset'],
+      ['literal', [0, 0]],
+    ],
     'text-allow-overlap': false,
     'text-ignore-placement': false,
     'text-padding': textPadding,

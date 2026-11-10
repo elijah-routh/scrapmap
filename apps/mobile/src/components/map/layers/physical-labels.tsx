@@ -1,8 +1,6 @@
 import { GeoJSONSource } from '@maplibre/maplibre-react-native';
 
-import type { FeatureCollection } from 'geojson';
-
-import { useMemo } from 'react';
+import type { FeatureCollection, Point } from 'geojson';
 
 import { SymbolLabelPair } from '@/components/map/layers/symbol-label-pair';
 import { LABEL_TEXT_SIZE } from '@/constants/map-label-tiers';
@@ -16,17 +14,7 @@ import {
   regionLabelVisibility,
 } from '@/utils/map/label-expressions';
 
-import {
-  generateVisibleRegionLabels,
-  type MapBounds,
-  type RegionLabelData,
-} from '@/utils/map/region-label-placement';
-
-const geographyPoints =
-  require('@/assets/GeoJSON/Physical/50m-physical-points_labels.json') as FeatureCollection;
-
-const regionCandidates =
-  require('@/assets/GeoJSON/Physical/region-label-candidates.json') as RegionLabelData[];
+import { emptyPointCollection } from '@/utils/map/label-offset-placement';
 
 const POINT_STYLE = {
   color: '#5C4630',
@@ -40,38 +28,34 @@ const REGION_STYLE = {
   haloWidth: 1.5,
 };
 
+const EMPTY_COLLECTION = emptyPointCollection();
+
 type PhysicalLabelsProps = {
   showPoints?: boolean;
   showRegions?: boolean;
-  visibleBounds: MapBounds | null;
+  regionLabels: FeatureCollection<Point>;
+  pointLabels: FeatureCollection<Point>;
   onLabelPress?: (selection: MapSelection) => void;
 };
 
 export function PhysicalLabels({
   showPoints = true,
   showRegions = true,
-  visibleBounds,
+  regionLabels,
+  pointLabels,
   onLabelPress,
 }: PhysicalLabelsProps) {
-  const visibleRegionLabels = useMemo(() => {
-    if (!visibleBounds || !showRegions) {
-      return {
-        type: 'FeatureCollection',
-        features: [],
-      } as FeatureCollection;
-    }
-
-    return generateVisibleRegionLabels(regionCandidates, visibleBounds);
-  }, [visibleBounds, showRegions]);
-
   const regionVisibility = regionLabelVisibility();
+
+  const regionData = showRegions ? regionLabels : EMPTY_COLLECTION;
+  const pointData = showPoints ? pointLabels : EMPTY_COLLECTION;
 
   return (
     <>
       {showRegions && (
         <GeoJSONSource
           id="physical-region-labels-source"
-          data={visibleRegionLabels}
+          data={regionData}
           onPress={(event) => {
             const feature = event.nativeEvent.features?.[0];
             const name = feature?.properties?.displayName;
@@ -110,7 +94,7 @@ export function PhysicalLabels({
       {showPoints && (
         <GeoJSONSource
           id="physical-points-source"
-          data={geographyPoints}
+          data={pointData}
           onPress={(event) => {
             const feature = event.nativeEvent.features?.[0];
             const name = feature?.properties?.name;
