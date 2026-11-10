@@ -12,6 +12,8 @@ import BottomSheet, {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
 
+import { pointDescription, pointPhotoSource } from '@/data/point-content';
+import { regionDescription, regionPhotoSource } from '@/data/region-content';
 import {
   wonderDescription,
   wonderPhotoSource,
@@ -55,15 +57,46 @@ export function MapBottomPanel({
   const isRegion = selection?.type === 'region';
   const isWonder = selection?.type === 'wonder';
 
-  const wonderBody =
-    isWonder && selection
-      ? wonderDescription(selection.id)
-      : undefined;
+  const descriptionBody = useMemo(() => {
+    if (!selection) {
+      return undefined;
+    }
 
-  const wonderImage =
-    isWonder && selection
-      ? wonderPhotoSource(selection.id)
-      : null;
+    switch (selection.type) {
+      case 'wonder':
+        return (
+          wonderDescription(selection.id) ??
+          'Add a description for this wonder in assets/content/wonder-content.json.'
+        );
+      case 'region':
+        return (
+          regionDescription(selection.id) ??
+          'Add a description for this region in assets/content/region-content.json.'
+        );
+      case 'point':
+        return (
+          pointDescription(selection.name) ??
+          'Add a description for this feature in assets/content/point-content.json.'
+        );
+    }
+  }, [selection]);
+
+  const heroImage = useMemo(() => {
+    if (!selection) {
+      return null;
+    }
+
+    switch (selection.type) {
+      case 'wonder':
+        return wonderPhotoSource(selection.id);
+      case 'region':
+        return regionPhotoSource(selection.id);
+      case 'point':
+        return pointPhotoSource(selection.name);
+      default:
+        return null;
+    }
+  }, [selection]);
 
   return (
     <BottomSheet
@@ -89,9 +122,9 @@ export function MapBottomPanel({
                   : 'GEOGRAPHICAL FEATURE'}
             </Text>
 
-            {wonderImage ? (
+            {heroImage ? (
               <Image
-                source={wonderImage}
+                source={heroImage}
                 style={styles.heroImage}
                 contentFit="cover"
                 accessibilityLabel={selection.name}
@@ -102,14 +135,7 @@ export function MapBottomPanel({
               {selection.name}
             </Text>
 
-            <Text style={styles.description}>
-              {isWonder
-                ? wonderBody ??
-                  'Add a description for this wonder in assets/content/wonder-content.json.'
-                : isRegion
-                  ? 'Explore this geographical region.'
-                  : 'Explore this geographical feature.'}
-            </Text>
+            <Text style={styles.description}>{descriptionBody}</Text>
 
             <Pressable
               style={styles.button}

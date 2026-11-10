@@ -36,7 +36,7 @@ const SMALL_REGION_CLASSES = new Set([
   'Island group',
   'Pen/cape',
   'Peninsula',
-  'Geoarea',
+  //'Geoarea',
   'Isthmus',
 ]);
 

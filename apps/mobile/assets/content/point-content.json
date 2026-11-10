@@ -1,0 +1,782 @@
+{
+  "Gees Gwardafuy": {
+    "name": "Gees Gwardafuy",
+    "description": "Also known as Cape Guardafui, this headland at Somalia's northeastern tip overlooks the Gulf of Aden and the Indian Ocean near a historic shipping route.",
+    "photo": null
+  },
+  "Wright Island": {
+    "name": "Wright Island",
+    "description": "A large, ice-covered Antarctic island along the Bakutis Coast of Marie Byrd Land, surrounded by remote ice shelves and polar seas.",
+    "photo": null
+  },
+  "Grant Island": {
+    "name": "Grant Island",
+    "description": "An ice-covered island off Antarctica's Marie Byrd Land, almost encircled by the Getz Ice Shelf and named after a U.S. Navy commander.",
+    "photo": null
+  },
+  "Newman Island": {
+    "name": "Newman Island",
+    "description": "A long, ice-covered island embedded in Antarctica's Nickerson Ice Shelf off the coast of Marie Byrd Land.",
+    "photo": null
+  },
+  "Dean Island": {
+    "name": "Dean Island",
+    "description": "A remote Antarctic island surrounded by the Getz Ice Shelf, between Grant Island and Siple Island off Marie Byrd Land.",
+    "photo": null
+  },
+  "Cape Canaveral": {
+    "name": "Cape Canaveral",
+    "description": "A sandy cape on Florida's Atlantic coast, internationally known for NASA's Kennedy Space Center and generations of space launches.",
+    "photo": null
+  },
+  "Cape Mendocino": {
+    "name": "Cape Mendocino",
+    "description": "A rugged headland on Northern California's Pacific coast, near the tectonically active Mendocino Triple Junction.",
+    "photo": null
+  },
+  "Cabo San Lucas": {
+    "name": "Cabo San Lucas",
+    "description": "A coastal headland and resort area at the southern tip of Mexico's Baja California Peninsula, famous for dramatic granite sea arches.",
+    "photo": null
+  },
+  "Cape Churchill": {
+    "name": "Cape Churchill",
+    "description": "A remote headland on the western shore of Hudson Bay in Manitoba, Canada, known for polar bear habitat and Arctic coastal tundra.",
+    "photo": null
+  },
+  "Cape Cod": {
+    "name": "Cape Cod",
+    "description": "A hook-shaped peninsula extending into the Atlantic from Massachusetts, celebrated for sandy beaches, fishing villages, and maritime history.",
+    "photo": null
+  },
+  "Cape May": {
+    "name": "Cape May",
+    "description": "A historic seaside cape at New Jersey's southern tip, where Delaware Bay meets the Atlantic and migratory birds gather.",
+    "photo": null
+  },
+  "Cabo de Hornos": {
+    "name": "Cabo de Hornos",
+    "description": "Cape Horn is a storm-exposed headland on Hornos Island in southern Chile, long regarded as a landmark of treacherous ocean navigation.",
+    "photo": null
+  },
+  "Cape of Good Hope": {
+    "name": "Cape of Good Hope",
+    "description": "A rocky promontory near Cape Town, South Africa, famous for dramatic cliffs and its place in the history of ocean trade.",
+    "photo": null
+  },
+  "Cape Palmas": {
+    "name": "Cape Palmas",
+    "description": "A headland on Liberia's southeastern Atlantic coast near Harper, marking a prominent turn in West Africa's shoreline.",
+    "photo": null
+  },
+  "Cape Verde": {
+    "name": "Cape Verde",
+    "description": "Also called Cap-Vert, this Atlantic peninsula around Dakar, Senegal, is the westernmost point of mainland Africa.",
+    "photo": null
+  },
+  "Cap Bon": {
+    "name": "Cap Bon",
+    "description": "A peninsula and headland in northeastern Tunisia projecting into the Mediterranean, with fertile countryside, beaches, and historic coastal towns.",
+    "photo": null
+  },
+  "Oceanic pole of inaccessibility": {
+    "name": "Oceanic pole of inaccessibility",
+    "description": "Known as Point Nemo, this remote South Pacific location lies farther from any land than any other place in the world's oceans.",
+    "photo": null
+  },
+  "South Magnetic Pole 2005 (est)": {
+    "name": "South Magnetic Pole 2005 (est)",
+    "description": "An estimated 2005 position of the shifting South Magnetic Pole near Antarctica, where Earth's magnetic field points vertically upward.",
+    "photo": null
+  },
+  "North Magnetic Pole 2005 (est)": {
+    "name": "North Magnetic Pole 2005 (est)",
+    "description": "An estimated 2005 position of the moving North Magnetic Pole in the Canadian Arctic, where Earth's magnetic field points vertically downward.",
+    "photo": null
+  },
+  "Lands End": {
+    "name": "Lands End",
+    "description": "Land's End is a dramatic granite headland at the western end of Cornwall, England, overlooking the open Atlantic Ocean.",
+    "photo": null
+  },
+  "Cape York (Greenland)": {
+    "name": "Cape York (Greenland)",
+    "description": "An Arctic cape on Greenland's northwestern coast, associated with the Thule region and the historic Cape York meteorite discoveries.",
+    "photo": null
+  },
+  "Nunap Isua": {
+    "name": "Nunap Isua",
+    "description": "Also known as Cape Farewell, this rocky headland on an offshore island marks Greenland's southernmost extremity.",
+    "photo": null
+  },
+  "Cape Vohimena": {
+    "name": "Cape Vohimena",
+    "description": "Also called Cape Sainte Marie, this windswept cape marks Madagascar's southern tip and protects distinctive dry coastal habitat.",
+    "photo": null
+  },
+  "Vavau": {
+    "name": "Vavau",
+    "description": "Vavaʻu is an island group in northern Tonga, renowned for sheltered bays, coral reefs, and humpback whales that visit seasonally.",
+    "photo": null
+  },
+  "I. de Pascua": {
+    "name": "I. de Pascua",
+    "description": "Easter Island, or Rapa Nui, is a remote Chilean island in the Pacific known for its monumental moai statues and Polynesian culture.",
+    "photo": null
+  },
+  "Cape Agulhas": {
+    "name": "Cape Agulhas",
+    "description": "The southernmost point of the African mainland, where the Atlantic and Indian oceans are conventionally said to meet.",
+    "photo": null
+  },
+  "Plain of Jars": {
+    "name": "Plain of Jars",
+    "description": "An archaeological landscape in Laos containing thousands of ancient stone jars scattered across upland plains, with their original purpose still debated.",
+    "photo": null
+  },
+  "Cabo Corrientes (North America)": {
+    "name": "Cabo Corrientes (North America)",
+    "description": "A rocky headland on Mexico's Pacific coast south of Puerto Vallarta, forming the southern edge of Banderas Bay.",
+    "photo": null
+  },
+  "Pt. Eugenia": {
+    "name": "Pt. Eugenia",
+    "description": "Punta Eugenia is a headland on Baja California's Pacific coast in Mexico, beside productive waters and the offshore islands of Sebastián Vizcaíno Bay.",
+    "photo": null
+  },
+  "Point Conception": {
+    "name": "Point Conception",
+    "description": "A prominent headland on California's Santa Barbara County coast, where the shoreline bends sharply and ocean conditions often change.",
+    "photo": null
+  },
+  "Cape Hatteras": {
+    "name": "Cape Hatteras",
+    "description": "A shifting barrier-island headland on North Carolina's Outer Banks, famed for its lighthouse, surf, and hazardous offshore shoals.",
+    "photo": null
+  },
+  "Cape Sable (North America)": {
+    "name": "Cape Sable (North America)",
+    "description": "A low-lying cape at the southwestern edge of mainland Florida, overlooking the Gulf of Mexico within Everglades National Park.",
+    "photo": null
+  },
+  "Cape Hope": {
+    "name": "Cape Hope",
+    "description": "A headland on the northern shore of Scoresby Sound in eastern Greenland, close to the former settlement of Kap Hope.",
+    "photo": null
+  },
+  "Point Barrow": {
+    "name": "Point Barrow",
+    "description": "The northernmost point of the United States, extending into the Arctic Ocean near Utqiaġvik, Alaska.",
+    "photo": null
+  },
+  "Punta Negra": {
+    "name": "Punta Negra",
+    "description": "A coastal point on the Pacific-facing shores of South America, named for the dark appearance of its rocky headland.",
+    "photo": null
+  },
+  "Punta Lavapié": {
+    "name": "Punta Lavapié",
+    "description": "A rocky point and fishing settlement on Chile's Biobío coast, commanding views across the Gulf of Arauco toward Santa María Island.",
+    "photo": null
+  },
+  "Punta Galera": {
+    "name": "Punta Galera",
+    "description": "A prominent headland in southern Chile's Los Ríos Region, marked by an historic lighthouse above the Pacific Ocean.",
+    "photo": null
+  },
+  "Cap Lopez": {
+    "name": "Cap Lopez",
+    "description": "A low, sandy headland near Port-Gentil, Gabon, at the mouth of the Ogooué River where its waters meet the Atlantic.",
+    "photo": null
+  },
+  "Cape Bobaomby": {
+    "name": "Cape Bobaomby",
+    "description": "Also called Cap d'Ambre, this windswept headland forms the northernmost tip of Madagascar.",
+    "photo": null
+  },
+  "Cap Blanc": {
+    "name": "Cap Blanc",
+    "description": "A desert headland on the Mauritania–Western Sahara coast near Nouadhibou, notable for rocky shores and endangered Mediterranean monk seals.",
+    "photo": null
+  },
+  "South West Cape": {
+    "name": "South West Cape",
+    "description": "A remote, wind-battered cape on Tasmania's southwestern coast, facing the Southern Ocean within a wild protected landscape.",
+    "photo": null
+  },
+  "Cape Howe": {
+    "name": "Cape Howe",
+    "description": "A coastal headland near the Victoria–New South Wales border in southeastern Australia, bordered by beaches and heathland.",
+    "photo": null
+  },
+  "Cape Otway": {
+    "name": "Cape Otway",
+    "description": "A rocky cape on Victoria's southern coast, where a historic lighthouse stands above the waters of Bass Strait.",
+    "photo": null
+  },
+  "Cape Jaffa": {
+    "name": "Cape Jaffa",
+    "description": "A low coastal headland in South Australia near the Coorong, historically important as a navigation landmark and lighthouse site.",
+    "photo": null
+  },
+  "Cape Carnot": {
+    "name": "Cape Carnot",
+    "description": "A rugged headland on the southern tip of South Australia's Eyre Peninsula, southwest of Port Lincoln.",
+    "photo": null
+  },
+  "Cape Byron": {
+    "name": "Cape Byron",
+    "description": "Australia's easternmost mainland point, near Byron Bay in New South Wales, distinguished by a lighthouse and sweeping ocean views.",
+    "photo": null
+  },
+  "Cape Manifold": {
+    "name": "Cape Manifold",
+    "description": "A coastal headland on Queensland's Capricorn Coast, marking part of the shoreline north of the Tropic of Capricorn.",
+    "photo": null
+  },
+  "Cape York (Australia)": {
+    "name": "Cape York (Australia)",
+    "description": "The northernmost point of mainland Australia, at the tip of Queensland's Cape York Peninsula overlooking Torres Strait.",
+    "photo": null
+  },
+  "Cape Melville": {
+    "name": "Cape Melville",
+    "description": "A remote granite headland on northeastern Queensland's coast, adjoining a national park known for isolated rainforest and unique wildlife.",
+    "photo": null
+  },
+  "Cape Arnhem": {
+    "name": "Cape Arnhem",
+    "description": "A coastal headland in Australia's Northern Territory, on the eastern side of the Gove Peninsula in the Yolŋu homelands.",
+    "photo": null
+  },
+  "West Cape Howe": {
+    "name": "West Cape Howe",
+    "description": "A rugged headland on Western Australia's south coast, known for cliffs, coastal bushland, and views of the Southern Ocean.",
+    "photo": null
+  },
+  "Cape Leeuwin": {
+    "name": "Cape Leeuwin",
+    "description": "Australia's southwesternmost mainland cape, near Augusta, where the Indian and Southern oceans are commonly considered to meet.",
+    "photo": null
+  },
+  "Cape Pasley": {
+    "name": "Cape Pasley",
+    "description": "A remote rocky headland along Western Australia's southern coast, overlooking wild beaches and the Great Australian Bight region.",
+    "photo": null
+  },
+  "Cape Londonderry": {
+    "name": "Cape Londonderry",
+    "description": "The northernmost point of Western Australia, projecting into the Timor Sea from the Kimberley coastline.",
+    "photo": null
+  },
+  "Steep Point": {
+    "name": "Steep Point",
+    "description": "The westernmost point of mainland Australia, a dramatic cliff-edge headland on the Indian Ocean coast of Western Australia.",
+    "photo": null
+  },
+  "North West Cape": {
+    "name": "North West Cape",
+    "description": "A peninsula on Western Australia's Indian Ocean coast near Exmouth, adjacent to Ningaloo Reef and its abundant marine life.",
+    "photo": null
+  },
+  "Cabo Gracias a Dios": {
+    "name": "Cabo Gracias a Dios",
+    "description": "A low-lying headland on the Caribbean coast at the Nicaragua–Honduras border, near the mouth of the Coco River.",
+    "photo": null
+  },
+  "Cape Brewster": {
+    "name": "Cape Brewster",
+    "description": "A steep, basalt-walled cape in eastern Greenland on the southern side of the entrance to Scoresby Sound.",
+    "photo": null
+  },
+  "Cape Morris Jesup": {
+    "name": "Cape Morris Jesup",
+    "description": "The northernmost point of Greenland's mainland, a remote Arctic cape overlooking the Lincoln Sea.",
+    "photo": null
+  },
+  "Grímsey": {
+    "name": "Grímsey",
+    "description": "A small island north of Iceland crossed by the Arctic Circle, known for seabird colonies and fishing traditions.",
+    "photo": null
+  },
+  "Surtsey": {
+    "name": "Surtsey",
+    "description": "A volcanic island south of Iceland formed during eruptions from 1963 to 1967 and protected for research into ecological colonization.",
+    "photo": null
+  },
+  "Cap Est": {
+    "name": "Cap Est",
+    "description": "A headland on Madagascar's northeastern coast near Antalaha, where tropical vegetation meets the Indian Ocean.",
+    "photo": null
+  },
+  "Cape Cretin": {
+    "name": "Cape Cretin",
+    "description": "A headland on Papua New Guinea's northern coast near Lae, overlooking the Huon Gulf.",
+    "photo": null
+  },
+  "Îles Chesterfield": {
+    "name": "Îles Chesterfield",
+    "description": "A remote group of coral reefs and sandy islets in the Coral Sea, associated with New Caledonia and important to nesting seabirds.",
+    "photo": null
+  },
+  "Pagan": {
+    "name": "Pagan",
+    "description": "A volcanic island in the Northern Mariana Islands, with active volcanic terrain rising above the western Pacific Ocean.",
+    "photo": null
+  },
+  "Wake I.": {
+    "name": "Wake I.",
+    "description": "Wake Island is a small coral atoll in the northern Pacific, known for its strategic airfield and World War II history.",
+    "photo": null
+  },
+  "Tabiteuea": {
+    "name": "Tabiteuea",
+    "description": "A long, narrow coral atoll in Kiribati's Gilbert Islands, made up of villages along low-lying islets and lagoon waters.",
+    "photo": null
+  },
+  "Aranuka": {
+    "name": "Aranuka",
+    "description": "A small coral atoll in Kiribati's Gilbert Islands, distinguished by its unusual triangular lagoon and coconut-lined islets.",
+    "photo": null
+  },
+  "Nauru": {
+    "name": "Nauru",
+    "description": "A tiny island country in the central Pacific, known for its raised coral plateau and history of phosphate mining.",
+    "photo": null
+  },
+  "Ebon": {
+    "name": "Ebon",
+    "description": "A low-lying coral atoll in the southern Marshall Islands, with a broad lagoon enclosed by a ring of islets.",
+    "photo": null
+  },
+  "Jaluit": {
+    "name": "Jaluit",
+    "description": "An atoll in the Marshall Islands with historic importance as an administrative and trading center during the colonial era.",
+    "photo": null
+  },
+  "Mili": {
+    "name": "Mili",
+    "description": "A coral atoll in the Marshall Islands, with numerous islets, extensive lagoon waters, and World War II remains.",
+    "photo": null
+  },
+  "Majuro": {
+    "name": "Majuro",
+    "description": "A large atoll and the capital area of the Marshall Islands, where narrow coral islands surround a sheltered lagoon.",
+    "photo": null
+  },
+  "Ailinglapalap": {
+    "name": "Ailinglapalap",
+    "description": "A broad coral atoll in the Marshall Islands, consisting of low islets around a lagoon and long-established island communities.",
+    "photo": null
+  },
+  "Kwajalein": {
+    "name": "Kwajalein",
+    "description": "One of the world's largest coral atolls by lagoon area, in the Marshall Islands, with islands used for defense and space tracking.",
+    "photo": null
+  },
+  "Rongelap": {
+    "name": "Rongelap",
+    "description": "A remote Marshall Islands atoll affected by radioactive fallout from U.S. nuclear testing in 1954, with a history of displacement and resettlement efforts.",
+    "photo": null
+  },
+  "Bikini": {
+    "name": "Bikini",
+    "description": "A Marshall Islands atoll internationally known for U.S. nuclear tests conducted there and the lasting environmental and human consequences.",
+    "photo": null
+  },
+  "Cape Reinga": {
+    "name": "Cape Reinga",
+    "description": "A sacred headland at the northern end of New Zealand's North Island, where Māori tradition links the land with departing spirits.",
+    "photo": null
+  },
+  "Kanton Island": {
+    "name": "Kanton Island",
+    "description": "A large coral atoll in Kiribati's Phoenix Islands, noted for its expansive lagoon and historic role in trans-Pacific aviation.",
+    "photo": null
+  },
+  "Tabuaeran": {
+    "name": "Tabuaeran",
+    "description": "Also called Fanning Island, this inhabited coral atoll in Kiribati's Line Islands has a lagoon and low palm-covered land.",
+    "photo": null
+  },
+  "Malden Island": {
+    "name": "Malden Island",
+    "description": "A remote, uninhabited island in Kiribati's Line Islands, known for seabirds, prehistoric Polynesian remains, and former guano extraction.",
+    "photo": null
+  },
+  "Rarotonga": {
+    "name": "Rarotonga",
+    "description": "The largest and most populous island of the Cook Islands, with volcanic peaks, tropical forests, and a surrounding fringing reef.",
+    "photo": null
+  },
+  "Rangiroa": {
+    "name": "Rangiroa",
+    "description": "One of the world's largest atolls, in French Polynesia's Tuamotu Archipelago, known for an immense lagoon and rich marine life.",
+    "photo": null
+  },
+  "Funafuti": {
+    "name": "Funafuti",
+    "description": "The capital atoll of Tuvalu, with slender coral islets surrounding a lagoon and communities vulnerable to rising seas.",
+    "photo": null
+  },
+  "Saint Croix": {
+    "name": "Saint Croix",
+    "description": "The largest of the U.S. Virgin Islands, featuring Caribbean beaches, historic Danish colonial towns, and coral reefs.",
+    "photo": null
+  },
+  "Grand Cayman": {
+    "name": "Grand Cayman",
+    "description": "The largest Cayman Island, known for Seven Mile Beach, clear Caribbean waters, and George Town's financial and tourism activity.",
+    "photo": null
+  },
+  "San Salvador": {
+    "name": "San Salvador",
+    "description": "A low-lying Bahamian island with reefs, inland lakes, and historical associations with Columbus's first Caribbean landfall.",
+    "photo": null
+  },
+  "Grenada": {
+    "name": "Grenada",
+    "description": "A mountainous Caribbean island and country known for spice cultivation, tropical forests, and sheltered bays.",
+    "photo": null
+  },
+  "Barbuda": {
+    "name": "Barbuda",
+    "description": "A low-lying Caribbean island belonging to Antigua and Barbuda, known for pink-tinted beaches and a major frigatebird colony.",
+    "photo": null
+  },
+  "Antigua": {
+    "name": "Antigua",
+    "description": "The larger island of Antigua and Barbuda, famous for its many sheltered harbors, beaches, and historic English Harbour.",
+    "photo": null
+  },
+  "Guadeloupe": {
+    "name": "Guadeloupe",
+    "description": "A French Caribbean island group centered on mountainous Basse-Terre and flatter Grande-Terre, featuring rainforests and volcanic landscapes.",
+    "photo": null
+  },
+  "Dominica": {
+    "name": "Dominica",
+    "description": "A mountainous Caribbean island nation known for dense rainforests, hot springs, and dramatic volcanic scenery.",
+    "photo": null
+  },
+  "Martinique": {
+    "name": "Martinique",
+    "description": "A French Caribbean island with volcanic highlands, tropical beaches, and cultural influences from Africa, Europe, and the wider Caribbean.",
+    "photo": null
+  },
+  "Saint Lucia": {
+    "name": "Saint Lucia",
+    "description": "A volcanic Caribbean island nation best known for the twin Pitons, tropical forests, and scenic bays.",
+    "photo": null
+  },
+  "Saint Vincent": {
+    "name": "Saint Vincent",
+    "description": "The main island of Saint Vincent and the Grenadines, dominated by the active La Soufrière volcano and lush mountain terrain.",
+    "photo": null
+  },
+  "Barbados": {
+    "name": "Barbados",
+    "description": "An eastern Caribbean island nation known for coral-limestone landscapes, beaches, and a long history of sugar cultivation.",
+    "photo": null
+  },
+  "Tobago": {
+    "name": "Tobago",
+    "description": "The smaller main island of Trinidad and Tobago, celebrated for forested hills, coral reefs, and the historic Main Ridge rainforest reserve.",
+    "photo": null
+  },
+  "Margarita": {
+    "name": "Margarita",
+    "description": "A Venezuelan island in the Caribbean Sea known for dry hills, sandy beaches, fishing communities, and coastal towns.",
+    "photo": null
+  },
+  "Curaçao": {
+    "name": "Curaçao",
+    "description": "A Dutch Caribbean island with colorful Willemstad architecture, dry landscapes, and sheltered coves rich in marine life.",
+    "photo": null
+  },
+  "Aruba": {
+    "name": "Aruba",
+    "description": "A low-lying Dutch Caribbean island just off Venezuela, noted for white beaches, arid hills, and constant trade winds.",
+    "photo": null
+  },
+  "Ra’s Banäs": {
+    "name": "Ra’s Banäs",
+    "description": "A long headland on Egypt's Red Sea coast, extending toward coral-rich waters near the southern part of the country.",
+    "photo": null
+  },
+  "Ponta das Salinas": {
+    "name": "Ponta das Salinas",
+    "description": "A prominent headland on Angola's Atlantic coast southwest of Benguela, marked by a lighthouse used in coastal navigation.",
+    "photo": null
+  },
+  "Ponta das Palmeirinhas": {
+    "name": "Ponta das Palmeirinhas",
+    "description": "A headland south of Luanda, Angola, on the Atlantic coast, with a lighthouse overlooking a stretch of sandy shoreline.",
+    "photo": null
+  },
+  "Cabo Bojador": {
+    "name": "Cabo Bojador",
+    "description": "A cape on the Atlantic coast of Western Sahara, historically feared by sailors before early Portuguese voyages rounded it.",
+    "photo": null
+  },
+  "Cape Comorin": {
+    "name": "Cape Comorin",
+    "description": "Also called Kanyakumari, the southernmost tip of mainland India, where the Arabian Sea, Bay of Bengal, and Indian Ocean converge.",
+    "photo": null
+  },
+  "Dondra Head": {
+    "name": "Dondra Head",
+    "description": "The southernmost point of Sri Lanka, near Matara, known for its prominent lighthouse overlooking the Indian Ocean.",
+    "photo": null
+  },
+  "Cape Yelizavety": {
+    "name": "Cape Yelizavety",
+    "description": "A northern headland of Sakhalin Island in Russia's Far East, facing the cold waters of the Sea of Okhotsk.",
+    "photo": null
+  },
+  "Pt. Yuzhnyy": {
+    "name": "Pt. Yuzhnyy",
+    "description": "A coastal point in Russia's Far East; its Russian name means 'southern point' and reflects its position on the shoreline.",
+    "photo": null
+  },
+  "Cape Sata": {
+    "name": "Cape Sata",
+    "description": "The southernmost cape on Japan's Kyushu mainland, overlooking waters that connect the Pacific Ocean and East China Sea.",
+    "photo": null
+  },
+  "Cape Aniva": {
+    "name": "Cape Aniva",
+    "description": "A remote cape at the southeastern tip of Sakhalin, Russia, near the weather-beaten Aniva Lighthouse.",
+    "photo": null
+  },
+  "Cape Terpeniya": {
+    "name": "Cape Terpeniya",
+    "description": "A long, narrow cape projecting from eastern Sakhalin Island into the Sea of Okhotsk in Russia's Far East.",
+    "photo": null
+  },
+  "Cape Lopatka (Asia)": {
+    "name": "Cape Lopatka (Asia)",
+    "description": "The southern tip of Russia's Kamchatka Peninsula, across the First Kuril Strait from the northern Kuril Islands.",
+    "photo": null
+  },
+  "Cape Ozernoy": {
+    "name": "Cape Ozernoy",
+    "description": "A remote headland on Kamchatka's eastern coast in Russia, facing the North Pacific and Bering Sea region.",
+    "photo": null
+  },
+  "Cape Olyutorskiy": {
+    "name": "Cape Olyutorskiy",
+    "description": "A headland in northeastern Kamchatka, Russia, projecting into the Bering Sea and marking the edge of Olyutorsky Bay.",
+    "photo": null
+  },
+  "Cape Navarin": {
+    "name": "Cape Navarin",
+    "description": "A prominent headland on the Bering Sea coast of Chukotka, Russia, known for strong winds and rugged shorelines.",
+    "photo": null
+  },
+  "Cape Ince": {
+    "name": "Cape Ince",
+    "description": "A geographic headland recorded in Turkey under the name İnce Burun, meaning 'narrow cape.'",
+    "photo": null
+  },
+  "Ra’s Fartak": {
+    "name": "Ra’s Fartak",
+    "description": "A dramatic coastal headland in eastern Yemen overlooking the Arabian Sea, with high cliffs rising above the shoreline.",
+    "photo": null
+  },
+  "Ras Sharbatat": {
+    "name": "Ras Sharbatat",
+    "description": "A headland on Oman's Arabian Sea coast, in a sparsely populated area of cliffs, beaches, and desert terrain.",
+    "photo": null
+  },
+  "Ra's al Had": {
+    "name": "Ra's al Had",
+    "description": "A headland at the eastern tip of Oman, near important sea turtle nesting beaches where the Gulf of Oman meets the Arabian Sea.",
+    "photo": null
+  },
+  "Hachijō-jima": {
+    "name": "Hachijō-jima",
+    "description": "A volcanic island south of Tokyo in Japan's Izu Islands, known for subtropical scenery, hot springs, and ocean views.",
+    "photo": null
+  },
+  "Nordkapp": {
+    "name": "Nordkapp",
+    "description": "North Cape is a famous cliff on Norway's Magerøya island, overlooking the Barents Sea and a popular destination for midnight-sun visitors.",
+    "photo": null
+  },
+  "Cabo de São Vicente": {
+    "name": "Cabo de São Vicente",
+    "description": "A windswept headland at Portugal's southwestern corner, where a historic lighthouse overlooks the Atlantic Ocean.",
+    "photo": null
+  },
+  "Cabo Fisterra": {
+    "name": "Cabo Fisterra",
+    "description": "A dramatic cape on Galicia's Atlantic coast in Spain, historically considered the end of the known world by some travelers.",
+    "photo": null
+  },
+  "Cape San Blas": {
+    "name": "Cape San Blas",
+    "description": "A sandy headland on Florida's Gulf Coast, known for its beaches, dunes, and historic lighthouse.",
+    "photo": null
+  },
+  "Cape Bauld": {
+    "name": "Cape Bauld",
+    "description": "A headland at the northern tip of Newfoundland, Canada, overlooking the Strait of Belle Isle and Labrador Sea waters.",
+    "photo": null
+  },
+  "Cape Fear": {
+    "name": "Cape Fear",
+    "description": "A prominent cape on the coast of North Carolina, near the mouth of the Cape Fear River and the notorious Frying Pan Shoals.",
+    "photo": null
+  },
+  "I. Guadalupe": {
+    "name": "I. Guadalupe",
+    "description": "Guadalupe Island is a remote volcanic island off Baja California, Mexico, famous for endemic species and surrounding great white shark habitat.",
+    "photo": null
+  },
+  "Miquelon": {
+    "name": "Miquelon",
+    "description": "An island in the French territory of Saint Pierre and Miquelon, near Newfoundland, linked to Langlade by a sandy isthmus.",
+    "photo": null
+  },
+  "I. Robinson Crusoe": {
+    "name": "I. Robinson Crusoe",
+    "description": "A rugged volcanic island belonging to Chile's Juan Fernández Archipelago, named after the novel inspired by a marooned sailor's experience there.",
+    "photo": null
+  },
+  "Cabo Orange": {
+    "name": "Cabo Orange",
+    "description": "A coastal cape in northern Brazil near the border with French Guiana, bordering the mangrove-rich wetlands of Cabo Orange National Park.",
+    "photo": null
+  },
+  "Cabo de Santa Marta Grande": {
+    "name": "Cabo de Santa Marta Grande",
+    "description": "A headland on Brazil's southern coast in Santa Catarina, known for its lighthouse and views over the Atlantic.",
+    "photo": null
+  },
+  "Punta del Este": {
+    "name": "Punta del Este",
+    "description": "A resort peninsula on Uruguay's Atlantic coast, where beaches meet the waters of the Río de la Plata estuary.",
+    "photo": null
+  },
+  "Cabo San Antonio": {
+    "name": "Cabo San Antonio",
+    "description": "A sandy headland on Argentina's Buenos Aires Province coast, forming the outer edge of Samborombón Bay.",
+    "photo": null
+  },
+  "Cabo Corrientes (South America)": {
+    "name": "Cabo Corrientes (South America)",
+    "description": "A rocky headland on Argentina's Atlantic coast at Mar del Plata, near beaches, cliffs, and urban waterfronts.",
+    "photo": null
+  },
+  "Punta Rasa": {
+    "name": "Punta Rasa",
+    "description": "A low coastal point in Argentina's Buenos Aires Province, where the Río de la Plata meets the Atlantic and migratory shorebirds gather.",
+    "photo": null
+  },
+  "Cabo Dos Bahías": {
+    "name": "Cabo Dos Bahías",
+    "description": "A rocky headland and wildlife reserve on Argentina's Chubut coast, known for seabirds and nearby penguin colonies.",
+    "photo": null
+  },
+  "Cabo Delgado": {
+    "name": "Cabo Delgado",
+    "description": "A headland on northern Mozambique's Indian Ocean coast near the border with Tanzania, giving its name to Cabo Delgado Province.",
+    "photo": null
+  },
+  "Ponta da Barra": {
+    "name": "Ponta da Barra",
+    "description": "A headland near Inhambane in southern Mozambique, bordered by reefs and beaches at the entrance to Inhambane Bay.",
+    "photo": null
+  },
+  "Ponta São Sebastio": {
+    "name": "Ponta São Sebastio",
+    "description": "A coastal point on São Tomé island near the capital, São Tomé, associated with the historic São Sebastião fort.",
+    "photo": null
+  },
+  "Ras Cantin": {
+    "name": "Ras Cantin",
+    "description": "Also called Cap Beddouza, this Atlantic headland on Morocco's coast is a notable navigational landmark near Safi.",
+    "photo": null
+  },
+  "Ra’s Kasr": {
+    "name": "Ra’s Kasr",
+    "description": "A headland on the Red Sea near the Sudan–Eritrea border, marking a coastal point in a sparsely populated region.",
+    "photo": null
+  },
+  "Ponta de Jericoacoara": {
+    "name": "Ponta de Jericoacoara",
+    "description": "A sandy coastal point in Ceará, Brazil, known for dunes, beaches, and the nearby village of Jericoacoara.",
+    "photo": null
+  },
+  "Cabo de São Roque": {
+    "name": "Cabo de São Roque",
+    "description": "A headland in northeastern Brazil near Natal, marking a prominent bend in the Atlantic coastline.",
+    "photo": null
+  },
+  "Ponta da Baleia": {
+    "name": "Ponta da Baleia",
+    "description": "A coastal point in southern Bahia, Brazil, near the Abrolhos marine region, visited seasonally by humpback whales.",
+    "photo": null
+  },
+  "Cabo de São Tomé": {
+    "name": "Cabo de São Tomé",
+    "description": "A low headland in Rio de Janeiro state, Brazil, surrounded by sandy Atlantic shores and coastal lagoons.",
+    "photo": null
+  },
+  "Cabo Frio": {
+    "name": "Cabo Frio",
+    "description": "A rocky Atlantic headland in Rio de Janeiro state, Brazil, known for cool ocean upwelling and clear coastal waters.",
+    "photo": null
+  },
+  "Cabo San Diego": {
+    "name": "Cabo San Diego",
+    "description": "A remote headland at the southeastern tip of Isla Grande de Tierra del Fuego, Argentina, overlooking the South Atlantic.",
+    "photo": null
+  },
+  "Cabo Tres Puntas": {
+    "name": "Cabo Tres Puntas",
+    "description": "A cape on Argentina's southern Patagonian coast, projecting into the Atlantic amid rugged shoreline and open steppe.",
+    "photo": null
+  },
+  "Cap Saint André": {
+    "name": "Cap Saint André",
+    "description": "A headland on Madagascar's western coast, extending into the Mozambique Channel near broad tidal flats and mangroves.",
+    "photo": null
+  },
+  "Cape St. Lucia": {
+    "name": "Cape St. Lucia",
+    "description": "A coastal headland on South Africa's KwaZulu-Natal shore, near the iSimangaliso Wetland Park and a historic lighthouse.",
+    "photo": null
+  },
+  "Cape St. Francis": {
+    "name": "Cape St. Francis",
+    "description": "A headland and coastal village on South Africa's Eastern Cape coast, known for surf, beaches, and the Seal Point Lighthouse.",
+    "photo": null
+  },
+  "Minamitori-shima": {
+    "name": "Minamitori-shima",
+    "description": "An isolated coral island administered by Japan, far east of the main Japanese islands and surrounded by the open Pacific.",
+    "photo": null
+  },
+  "Islas de Martín Vaz": {
+    "name": "Islas de Martín Vaz",
+    "description": "A tiny, remote Brazilian island group in the South Atlantic, consisting of steep rocky islets east of Trindade Island.",
+    "photo": null
+  },
+  "Rockall": {
+    "name": "Rockall",
+    "description": "A tiny, isolated granite outcrop in the North Atlantic, west of Scotland and Ireland, surrounded by deep ocean and disputed maritime claims.",
+    "photo": null
+  },
+  "I. de Cozumel": {
+    "name": "I. de Cozumel",
+    "description": "Cozumel is a Caribbean island off Mexico's Yucatán Peninsula, internationally known for coral reefs and scuba diving.",
+    "photo": null
+  },
+  "Bermuda Islands": {
+    "name": "Bermuda Islands",
+    "description": "A subtropical Atlantic archipelago and British Overseas Territory, known for pink-sand beaches, limestone caves, and maritime history.",
+    "photo": null
+  }
+}
