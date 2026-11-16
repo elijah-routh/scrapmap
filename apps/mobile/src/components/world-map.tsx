@@ -3,7 +3,10 @@ import { useState, useRef, useMemo } from 'react';
 import {
   Camera,
   Map,
+  Marker,
 } from '@maplibre/maplibre-react-native';
+
+import { Ionicons } from '@expo/vector-icons';
 
 import {
   StyleSheet,
@@ -48,6 +51,9 @@ const EMPTY_LABELS = emptyPointCollection();
 type WorldMapProps = {
   selection: MapSelection | null;
   onSelectFeature: (selection: MapSelection) => void;
+  isPlacingPin: boolean;
+  draftPin: [number, number] | null;
+  onPlacePin: (lngLat: [number, number]) => void;
 };
 
 type MapViewport = {
@@ -62,6 +68,9 @@ type MapViewport = {
 export function WorldMap({
   selection,
   onSelectFeature,
+  isPlacingPin,
+  draftPin,
+  onPlacePin,
 }: WorldMapProps) {
   const [viewport, setViewport] =
     useState<MapViewport | null>(null);
@@ -124,6 +133,7 @@ export function WorldMap({
         ref={mapRef}
         style={styles.map}
         mapStyle={OFFLINE_MAP_STYLE}
+        androidView="texture"
 
         onDidFinishLoadingMap={() => {
           void syncViewportFromMap();
@@ -149,6 +159,11 @@ export function WorldMap({
 
           void syncViewportFromMap();
         }}
+
+        onPress={(event) => {
+          if (!isPlacingPin) return;
+          onPlacePin(event.nativeEvent.lngLat);
+        }}
       >
         <Camera
           initialViewState={WORLD_VIEW}
@@ -167,15 +182,23 @@ export function WorldMap({
         <PhysicalLabels
           showPoints={true}
           showRegions={true}
+          interactive={!isPlacingPin}
           regionLabels={placedLabels.regionLabels}
           pointLabels={placedLabels.physicalPoints}
           onLabelPress={onSelectFeature}
         />
 
         <WonderLabels
+          interactive={!isPlacingPin}
           wonderLabels={placedLabels.wonderPoints}
           onLabelPress={onSelectFeature}
         />
+
+        {draftPin && (
+          <Marker lngLat={draftPin} anchor="bottom">
+            <Ionicons name="location" size={36} color="#537A5A" />
+          </Marker>
+        )}
       </Map>
     </View>
   );

@@ -24,12 +24,14 @@ const EMPTY_COLLECTION = emptyPointCollection();
 
 type WonderLabelsProps = {
   visible?: boolean;
+  interactive?: boolean;
   wonderLabels?: FeatureCollection<Point>;
   onLabelPress?: (selection: MapSelection) => void;
 };
 
 export function WonderLabels({
   visible = true,
+  interactive = true,
   wonderLabels = EMPTY_COLLECTION,
   onLabelPress,
 }: WonderLabelsProps) {
@@ -41,28 +43,32 @@ export function WonderLabels({
     <GeoJSONSource
       id="wonder-points-source"
       data={wonderLabels}
-      onPress={(event) => {
-        const feature = event.nativeEvent.features?.[0];
-        const name = feature?.properties?.name;
-        const id = feature?.properties?.id ?? feature?.id;
+      onPress={
+        interactive
+          ? (event) => {
+              const feature = event.nativeEvent.features?.[0];
+              const name = feature?.properties?.name;
+              const id = feature?.properties?.id ?? feature?.id;
 
-        if (
-          typeof name !== 'string' ||
-          !name.trim() ||
-          typeof id !== 'string' ||
-          !id.trim()
-        ) {
-          return;
-        }
+              if (
+                typeof name !== 'string' ||
+                !name.trim() ||
+                typeof id !== 'string' ||
+                !id.trim()
+              ) {
+                return;
+              }
 
-        event.stopPropagation();
+              event.stopPropagation();
 
-        onLabelPress?.({
-          type: 'wonder',
-          id,
-          name,
-        });
-      }}
+              onLabelPress?.({
+                type: 'wonder',
+                id,
+                name,
+              });
+            }
+          : undefined
+      }
     >
       <SymbolLabelPair
         idPrefix="wonder-point-labels"

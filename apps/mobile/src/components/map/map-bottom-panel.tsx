@@ -24,11 +24,13 @@ import type { MapSelection } from '@/types/map-selection';
 type MapBottomPanelProps = {
   selection: MapSelection | null;
   onClearSelection: () => void;
+  isPlacingPin: boolean;
 };
 
 export function MapBottomPanel({
   selection,
   onClearSelection,
+  isPlacingPin,
 }: MapBottomPanelProps) {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
@@ -37,12 +39,15 @@ export function MapBottomPanel({
     []
   );
 
-  // Expand the bottom sheet when a feature is selected.
+  // Hide the sheet while placing a pin. Otherwise follow the selection.
   useEffect(() => {
-    if (selection) {
-      bottomSheetRef.current?.snapToIndex(1);
+    if (isPlacingPin) {
+      bottomSheetRef.current?.close();
+      return;
     }
-  }, [selection]);
+
+    bottomSheetRef.current?.snapToIndex(selection ? 1 : 0);
+  }, [isPlacingPin, selection]);
 
   const handleExpand = () => {
     bottomSheetRef.current?.snapToIndex(1);

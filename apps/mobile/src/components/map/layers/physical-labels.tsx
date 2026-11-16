@@ -33,6 +33,7 @@ const EMPTY_COLLECTION = emptyPointCollection();
 type PhysicalLabelsProps = {
   showPoints?: boolean;
   showRegions?: boolean;
+  interactive?: boolean;
   regionLabels: FeatureCollection<Point>;
   pointLabels: FeatureCollection<Point>;
   onLabelPress?: (selection: MapSelection) => void;
@@ -41,6 +42,7 @@ type PhysicalLabelsProps = {
 export function PhysicalLabels({
   showPoints = true,
   showRegions = true,
+  interactive = true,
   regionLabels,
   pointLabels,
   onLabelPress,
@@ -56,26 +58,30 @@ export function PhysicalLabels({
         <GeoJSONSource
           id="physical-region-labels-source"
           data={regionData}
-          onPress={(event) => {
-            const feature = event.nativeEvent.features?.[0];
-            const name = feature?.properties?.displayName;
-            const id = feature?.properties?.id ?? feature?.id;
+          onPress={
+            interactive
+              ? (event) => {
+                  const feature = event.nativeEvent.features?.[0];
+                  const name = feature?.properties?.displayName;
+                  const id = feature?.properties?.id ?? feature?.id;
 
-            if (
-              typeof name !== 'string' ||
-              (typeof id !== 'number' && typeof id !== 'string')
-            ) {
-              return;
-            }
+                  if (
+                    typeof name !== 'string' ||
+                    (typeof id !== 'number' && typeof id !== 'string')
+                  ) {
+                    return;
+                  }
 
-            event.stopPropagation();
+                  event.stopPropagation();
 
-            onLabelPress?.({
-              type: 'region',
-              name,
-              id,
-            });
-          }}
+                  onLabelPress?.({
+                    type: 'region',
+                    name,
+                    id,
+                  });
+                }
+              : undefined
+          }
         >
           <SymbolLabelPair
             idPrefix="physical-region-labels"
@@ -95,21 +101,25 @@ export function PhysicalLabels({
         <GeoJSONSource
           id="physical-points-source"
           data={pointData}
-          onPress={(event) => {
-            const feature = event.nativeEvent.features?.[0];
-            const name = feature?.properties?.name;
+          onPress={
+            interactive
+              ? (event) => {
+                  const feature = event.nativeEvent.features?.[0];
+                  const name = feature?.properties?.name;
 
-            if (typeof name !== 'string' || !name.trim()) {
-              return;
-            }
+                  if (typeof name !== 'string' || !name.trim()) {
+                    return;
+                  }
 
-            event.stopPropagation();
+                  event.stopPropagation();
 
-            onLabelPress?.({
-              type: 'point',
-              name,
-            });
-          }}
+                  onLabelPress?.({
+                    type: 'point',
+                    name,
+                  });
+                }
+              : undefined
+          }
         >
           <SymbolLabelPair
             idPrefix="physical-point-labels"

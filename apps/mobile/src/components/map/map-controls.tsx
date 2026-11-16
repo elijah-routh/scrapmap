@@ -1,9 +1,19 @@
 import { View, Pressable, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export function MapControls() {
+type MapControlsProps = {
+  onCreatePress: () => void;
+};
+
+export function MapControls({ onCreatePress }: MapControlsProps) {
   return (
     <View style={styles.container}>
+
+      <Pressable
+        style={styles.button}
+        onPress={onCreatePress}>
+        <Ionicons name="add" size={28} color="#333" />
+      </Pressable>
 
       <Pressable style={styles.button}>
         <Ionicons
